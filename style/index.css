@@ -3,16 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+button:focus-visible{
+    outline: none;
+}
 li{
     /* color: #fff; */
     list-style: none;
 }
-.container{
+.contain_style{
     position: relative;
 }
+/* ------------------HEADER------------------ */
 header{
     width: 100%;
     position: absolute;
+    z-index: 100;
 }
 .header_nav{
     display: flex;
@@ -26,7 +31,7 @@ header{
 .header_nav .logo{
     position: absolute;
     width: 225px;
-    height: 175px;
+    height: 200px;
     left: 20px;
     top: 0;
 }
@@ -37,9 +42,10 @@ header{
 .header_nav ul{
     position: relative;
     display: flex;
-    gap: 30px;
+    /* gap: 30px; */
     margin-right: 100px;
-    /* padding: 0 100px; */
+    margin-bottom: 0;
+    padding: 0;
     /* background-image: linear-gradient(to right, #00B9E5, #00B9E5); */
 }
 .header_nav ul li{
@@ -62,7 +68,13 @@ header{
     background-color: #00B9E5;
 }
 .header_nav ul li:hover a{
-    color: black;
+    color: white;
+    text-shadow:  0 0 3px white;
+}
+.header_nav ul li.nav_active{
+    background-color: #00B9E5;
+    color: white;
+    text-shadow:  0 0 3px white;    
 }
 .header_nav ul .layout{
     position: absolute;
@@ -73,12 +85,238 @@ header{
     background-color: #00B9E5;
     border-radius: 25px;
 }
-.slide_item{
+/* ---------------SLIDER-------------------- */
+.slider_contain{
+    position: relative;
+    z-index: 10;
+}
+.slider{
     width: 100%;
-    height: 100vh;
+    height: 115vh;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+.slider_contain .slider_btns{
+    display: none;
+    display: flex;
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 20px;
+    z-index: 15;
+}
+.slider_contain .slider_btns span{
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    /* margin: 50px; */
+    /* padding: 20px 20px; */
+    background-color: rgb(150, 150, 150, 0.8);
+    border: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+.slider_contain .slider_btns span:hover{
+    background-color: rgb(0, 185, 229, 0.8);
+}
+.slide_item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slide_item.item_active{
+    /* opacity: 0; */
+}
+.slide_item:nth-child(1){
+    /* transform: translateX(0%); */
+    z-index: 10;
+}
+.slide_item:nth-child(2){
+    /* transform: translateX(100%); */
+    z-index: 9;
 }
 .slide_item img{
     width: 100%;
     height: 100%;
+    filter: brightness(65%);
+}
+.slide_item:nth-child(1) img{
     object-fit: cover;
+    object-position: center;
+}
+.slide_item:nth-child(1) .slide_info{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%, -50%);
+    text-align: left;
+    color: #00B9E5;
+    /* font-weight: bold; */
+    text-shadow: 0 0 3px black;
+}
+.slide_info h3{
+    /* width: 50%; */
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0 0 15px black;
+    opacity: 0;
+    animation: displace 0.5s 0.2s linear forwards;
+}
+.slide_info span{
+    color: #fff;
+    text-shadow: 0 0 15px #00B9E5;
+    animation: text_glow 1.5s linear infinite;
+}
+@keyframes text_glow{
+    0%{
+        text-shadow: 0 0 15px #00B9E5;
+    }
+    50%{
+        text-shadow: 0 0 0px #fff;
+    }
+    100%{
+        text-shadow: 0 0 15px #00B9E5;
+    }
+}
+
+.slide_info h1{
+    max-width: 20ch;
+    font-size: 90px;
+    font-weight: bold;
+    text-shadow: 0 0 15px black;
+    opacity: 0;
+    animation: displace .5s .5s linear forwards;
+}
+.slide_info h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: #00B9E5;
+    text-shadow: 0 0 15px black;
+    transform: translateX(350px);
+    opacity: 0;
+    animation: displace 0.3s .7s linear forwards;
+}
+.slide_info p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #00B9E5;
+    text-shadow: 0 0 15px black;
+    transform: translateX(350px);
+    opacity: 0;
+    animation: displace 0.3s .7s linear forwards;
+}
+.slide_item:nth-child(1) .slide_info button{
+    padding: 20px 40px;
+    background-color: rgba(169, 169, 169, 0.5);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.2s linear;
+    transform: translateX(-250px);
+    opacity: 0;
+    animation: displace 0.3s 0.7s linear forwards;
+}
+.slide_info button:hover{
+    background-color: rgb(0, 185, 229, 0.8);
+    text-shadow: 0 0 3px #fff;
+    scale: 1.1;
+}
+@keyframes displace {
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* ------------------event_week--------------- */
+.event_week{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle,rgb(29, 132, 158),  #091933)  ;
+    background-position: center;
+    background-size: cover;
+    color: #000;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: -100px; */
+}
+.event_week::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 140%;
+    background-image: url('../img/figure_voley.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 5;
+   
+}
+.event_week::after{
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 40%;
+    height: 140%;
+    background-image: url('../img/figure_voley_2.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 5;
+    /* transform: scaleX(-1); */
+
+}
+.event_week .container_art{
+    position: relative;
+    z-index: 10;
+}
+.event_week .event_item{
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.event_week .event_item::after{
+    content: 'VS';
+    color: #fff;
+    position: absolute;
+    font-style: italic;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    font-weight: bold;
+}
+.event_week .contain_teams{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    height: 100%;
+}
+
+.event_week .contain_teams img{
+    width: 250px;
+    height: 250px;
+}
+/*--------------- section_news------------------ */
+.section_news{
+    padding: 120px 0;
 }
