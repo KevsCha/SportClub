@@ -118,3 +118,98 @@ header{
     text-shadow: 0 0 15px #00B9E5;
     margin: 0;
 }
+/* ---------------Context--------------- */
+.context_about{
+    padding: 100px 0;
+    margin: 0 auto;
+    max-width: 1148px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.context_about .about_table{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.context_about .about_table img{
+    width: 100%;
+    height: 100%;
+}
+.context_about .about_info{
+    width: 50%;
+}
+.context_about .about_info h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 5px #00B9E5;
+    margin-bottom: 20px;
+}
+.context_about .about_info p{
+    font-size: 18px;
+    color: #7a7a7a;
+    /* text-shadow: 0 0 5px #00B9E5; */
+    margin-bottom: 20px;
+}
+/* -------------- Service_about----------*/
+.service_about{
+    height: 900px;
+    position: relative;
+}
+.service_about > div{
+    max-width: 1148px;
+    height: 50%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+.service_about .teams_about > article{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    color: #fff;
+    z-index: 10;
+    padding: 40px 30px;
+}
+.service_about .teams_about .contain_list{
+    margin: 25px auto;
+    display: flex;
+}
+.service_about .work_about .info_work{
+    width: 50%;
+    /* background-color: #fff; */
+}
+.service_about .bg_radial{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-image: radial-gradient(circle,rgb(29, 132, 158),  #091933)  ;
+}
+.service_about .bg_radial > div{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+.service_about .bg_radial > div > div{
+    width: 50%;
+    height: 100%;
+}
+.service_about .bg_radial > div:first-of-type > div:last-of-type{
+    background-image: url(../img/article_img_4.jpg);
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    filter: brightness(0.5);
+}
+.service_about .bg_radial > div:last-of-type > div:first-of-type{
+    background-color: white;
+}
