@@ -157,11 +157,12 @@ header{
 }
 /* -------------- Service_about----------*/
 .service_about{
-    height: 900px;
+    /* height: 1000px; */
     position: relative;
 }
 .service_about > div{
     max-width: 1148px;
+    /* min-height: 500px; */
     height: 50%;
     margin: 0 auto;
     position: relative;
@@ -171,19 +172,47 @@ header{
 }
 .service_about .teams_about > article{
     width: 50%;
-    height: 100%;
     position: relative;
     color: #fff;
     z-index: 10;
     padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .service_about .teams_about .contain_list{
-    margin: 25px auto;
+    /* margin: 25px auto; */
     display: flex;
 }
-.service_about .work_about .info_work{
+.service_about .work_about > article{
     width: 50%;
-    /* background-color: #fff; */
+    position: relative;
+    color: #7a7a7a;
+    z-index: 10;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.service_about .work_about .service_work > .thumbnail_card{
+    display: flex;
+    width: 100%;
+    color: #fff;
+    /* gap: 30px 0; */
+    align-items: center;
+
+    /* padding: 20px 0; */
+}
+.service_work > .thumbnail_card .img_thumbnail{
+    width: 150px;
+    height: 80%;
+    margin-right: 35px;
+    display: flex;
+}
+.service_work > .thumbnail_card .img_thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .service_about .bg_radial{
     width: 100%;
@@ -203,12 +232,19 @@ header{
     width: 50%;
     height: 100%;
 }
-.service_about .bg_radial > div:first-of-type > div:last-of-type{
-    background-image: url(../img/article_img_4.jpg);
+/* .service_about .bg_radial > div:first-of-type > div:last-of-type{
+    background-image: url('../img/video/attack_mid.mp4');
     background-size: cover;
     background-position: left top;
     background-repeat: no-repeat;
     filter: brightness(0.5);
+} */
+#bg_attack_volley{
+    width: 100%;
+    /* min-height: 500px; */
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5) blur(1px);
 }
 .service_about .bg_radial > div:last-of-type > div:first-of-type{
     background-color: white;
