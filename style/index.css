@@ -1,18 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-button:focus-visible{
-    outline: none;
-}
-li{
-    /* color: #fff; */
-    list-style: none;
-}
-.contain_style{
-    position: relative;
-}
 /* ------------------HEADER------------------ */
 header{
     width: 100%;
@@ -98,35 +83,30 @@ header{
     position: relative;
 }
 .slider_contain .slider_btns{
-    display: none;
     display: flex;
     position: absolute;
-    bottom: 110px;
+    bottom: 115px;
     left: 50%;
     transform: translate(-50%, -50%);
     gap: 20px;
     z-index: 15;
 }
-.slider_contain .slider_btns span{
+.slider_contain .slider_btns button{
     width: 60px;
     height: 60px;
-    padding: 0;
-    /* margin: 50px; */
-    /* padding: 20px 20px; */
     background-color: rgb(150, 150, 150, 0.8);
     border: none;
     font-weight: bold;
     font-size: 25px;
     color: #fff;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
     cursor: pointer;
     transition: background-color 0.2s linear;
+    transition: 0.2s linear;
 }
-.slider_contain .slider_btns span:hover{
+.slider_contain .slider_btns button:hover{
     background-color: rgb(0, 185, 229, 0.8);
+    scale: 1.1;
 }
 .slide_item{
     position: absolute;
@@ -159,22 +139,25 @@ header{
     left: 5%;
     transform: translate(0%, -50%);
     text-align: left;
+    /* font-family: 'News_Reg'; */
     color: #00B9E5;
-    /* font-weight: bold; */
     text-shadow: 0 0 3px black;
 }
 .slide_info h3{
     /* width: 50%; */
     font-size: 40px;
     font-weight: bold;
+    /* font-family: 'News_Wide'; */
     text-shadow: 0 0 15px black;
     opacity: 0;
     animation: displace 0.5s 0.2s linear forwards;
 }
 .slide_info span{
     color: #fff;
+    font-family: 'RobotoCondensed';
     text-shadow: 0 0 15px #00B9E5;
     animation: text_glow 1.5s linear infinite;
+    font-size: 159px;
 }
 @keyframes text_glow{
     0%{
@@ -216,10 +199,10 @@ header{
 }
 .slide_item:nth-child(1) .slide_info button{
     padding: 15px 40px;
-    /* background-color: rgba(169, 169, 169, 0.5); */
-    background-image: radial-gradient(rgb(29, 132, 158),  #091933)  ;
+    background-color: rgba(169, 169, 169, 0.5);
+    /* background-image: radial-gradient(rgb(29, 132, 158),  #091933)  ; */
     border: none;
-    border-radius: 35px 35px 0 35px;
+    border-radius: 5px;
     font-weight: bold;
     font-size: 20px;
     color: #fff;
@@ -228,9 +211,10 @@ header{
     opacity: 0;
     animation: displace 0.3s 0.7s linear forwards;
 }
-.slide_info button:hover{
-    background-color: rgb(0, 185, 229, 0.8);
+
+.slide_item .slide_info > button:hover{
     text-shadow: 0 0 3px #fff;
+    background-color: rgb(29, 132, 158);
     scale: 1.1;
 }
 @keyframes displace {
@@ -306,10 +290,10 @@ header{
 }
 .event_week .contain_teams{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 80px;
-    width: 100%;
+    width: 650px;
     height: 100%;
 }
 

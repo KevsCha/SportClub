@@ -1,18 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-button:focus-visible{
-    outline: none;
-}
-li{
-    /* color: #fff; */
-    list-style: none;
-}
-.contain_style{
-    position: relative;
-}
 /* ---------------Header-------------- */
 header{
     width: 100%;
@@ -193,6 +178,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .service_about .work_about .service_work > .thumbnail_card{
     display: flex;
@@ -221,7 +207,8 @@ header{
     top: 0;
     left: 0;
     z-index: 5;
-    background-image: radial-gradient(circle,rgb(29, 132, 158),  #091933)  ;
+    background-image: radial-gradient(#06c8c0, #575757);
+    /* background-image: radial-gradient(circle,rgb(29, 132, 158),  #091933)  ; */
 }
 .service_about .bg_radial > div{
     display: flex;
@@ -248,4 +235,74 @@ header{
 }
 .service_about .bg_radial > div:last-of-type > div:first-of-type{
     background-color: white;
+}
+/* -------------------------FEDERADOS_TEAM------------------- */
+.federados_team{
+    padding: 100px 0;
+}
+.federados_team .container > .row div.card{
+    overflow: hidden;
+}
+.federados_team .container > .row div.card > .card-body{
+
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+.federados_team .container > .row img{
+    height: 400px;
+    object-fit: cover;
+    transition: all 0.3s linear;
+}
+.federados_team .container > .row img:hover{
+    mask-image: linear-gradient(black, black);
+    transform: scale(1.2);
+}
+/* ------------------footer-------------------*/
+footer{
+    padding: 100px 0;
+    background-color: #2e2e2e;
+    color: #fff;
+}
+.list_contact a{
+    color: white;
+    text-decoration: none;
+}
+.list_contact li{
+    margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.list_contact a:nth-child(1) li span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    /* background-color: #00B9E5; */
+    background-image: url('../img/gps.svg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.list_contact a:nth-child(2) li span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    /* background-color: #00B9E5; */
+    background-image: url('../img/mail.svg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.list_contact a:nth-child(3) li span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    /* background-color: #00B9E5; */
+    background-image: url('../img/phone.svg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
 }
