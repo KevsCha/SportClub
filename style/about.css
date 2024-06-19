@@ -217,6 +217,7 @@ header{
 }
 .service_about .bg_radial > div > div{
     width: 50%;
+    /* color: #1ebed4; */
     height: 100%;
 }
 /* .service_about .bg_radial > div:first-of-type > div:last-of-type{
@@ -264,10 +265,19 @@ footer{
     background-color: #2e2e2e;
     color: #fff;
 }
-.list_contact a{
-    color: white;
-    text-decoration: none;
+.list_contact{
+    padding: 0;
 }
+.list_contact a, .links_section a{
+    color: #00B9E5;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.1s linear;
+}
+.list_contact a:hover, .links_section a:hover{
+    color: #fff;
+}
+
 .list_contact li{
     margin-bottom: 20px;
     list-style: none;
@@ -281,7 +291,7 @@ footer{
     width: 30px;
     height: 30px;
     /* background-color: #00B9E5; */
-    background-image: url('../img/gps.svg');
+    background-image: url('../img/icon/gps\ \(1\).svg');
     background-size: cover;
     background-position: center;
     margin-right: 10px;
@@ -291,7 +301,7 @@ footer{
     width: 30px;
     height: 30px;
     /* background-color: #00B9E5; */
-    background-image: url('../img/mail.svg');
+    background-image: url('../img/icon/mail\ \(1\).svg');
     background-size: cover;
     background-position: center;
     margin-right: 10px;
@@ -301,8 +311,85 @@ footer{
     width: 30px;
     height: 30px;
     /* background-color: #00B9E5; */
-    background-image: url('../img/phone.svg');
+    background-image: url('../img/icon/phone_wh.svg');
     background-size: cover;
     background-position: center;
     margin-right: 10px;
+}
+.social_red{
+    display: flex;
+    gap: 10%;
+}
+.social_red a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.social_red a img{
+    width: 100%;
+    height: 100%;
+}
+.links_section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.links_section span{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.links_section span::before{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: #fff;
+    top: 150%;
+    left: 0;
+}
+.galery_section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* justify-content: space-between; */
+    margin-top: 50px;
+}
+.galery_section .img_link{
+    width: 30%;
+    height: 100px;
+    position: relative;
+    
+}
+.galery_section .img_link img[alt="sample_img"]{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+}
+.galery_section .img_link img[alt="chain"]{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.galery_section .img_link:hover img[alt="sample_img"]{
+    filter: brightness(0.5);
+}
+.galery_section .img_link:hover img[alt="chain"]{
+    opacity: 1;
+}
+.contain_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contain_logo h1{
+    font-family: 'RobotoCondensed';
 }

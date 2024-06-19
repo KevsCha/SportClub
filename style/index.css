@@ -305,3 +305,29 @@ header{
 .section_news{
     padding: 120px 0;
 }
+.section_news .card_news{
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    border-radius: 15px;
+}
+.section_news .card_news:hover img{
+    transform: scale(1.2);
+    filter: brightness(.5);
+}
+.section_news .card_news > div.card_info{
+    padding: 20px;
+    /* background-color: #00B9E5; */
+    color: #fff;
+    opacity: 0;
+}
+.section_news .card_news:hover > div.card_info{
+    opacity: 1;
+    transition: all 0.3s linear;
+    text-align: center;
+}
+.section_news .card_news > img{
+    min-height: 300px;
+    object-fit: cover;
+    transition: all 0.3s linear;
+}
