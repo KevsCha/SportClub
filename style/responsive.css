@@ -1,0 +1,8 @@
+/*!--------------------page_index------------------------- */
+/**-------next_macth----- */
+@media only screen and (width < 1248px){
+    .next_match{
+        display: flex;
+        flex-direction: column;
+    }
+}
