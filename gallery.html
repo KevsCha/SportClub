@@ -19,7 +19,7 @@
 					<a href="index.html"><img src="./img/logo.png" alt="logo"></a>
 				</div>
 				<ul>
-					<li><a href="#home">HOME</a></li>
+					<li><a href="index.html">HOME</a></li>
 					<li><a href="about.html">ABOUT</a></li>
 					<li><a href="teams.html">TOURNAMENT</a></li>
 					<li class="nav_active"><a href="gallery.html">GALLERY</a></li>
@@ -30,44 +30,64 @@
 		</header>
         <main>
             <div class="bg_gallery">
+                <!-- video automatico -->
+                <video autoplay muted loop id="bg_volley">
+                    <source src="./img/video/voley_mix.mp4" type="video/mp4">
+                </video>
                 <div class="contain_gallery">
-                    <h1>Momentos Memorables del Club de Vóley Warriors: Pasión y Victoria en Cada Partido</h1>
-                    <article>
-                        <img src="" alt="">
+                    <h1>Warriors Volleyball Club Highlights "Passion and Victory in Every Match"</h1>
+                    <article id="training">
+                        <img src="./img/AbbyBottomley.jpg" alt="">
                         <div class="title_section">
-                            <h1></h1>
-                            <div></div>
+                            <span>Master Your Game</span>
                         </div>
+                        <div class="layer"></div>
                     </article>
-                    <article>
-                        <img src="" alt="">
+                    <article id="competition">
+                        <img src="./img/pxfuel (3).jpg" alt="">
                         <div class="title_section">
-                            <h1></h1>
-                            <div></div>
+                            <span>Court Challenges</span>
                         </div>
+                        <div class="layer"></div>
                     </article>
-                    <article>
-                        <img src="" alt="">
+                    <article id="mini_league">
+                        <img src="./img/pexels-voley_2.jpg" alt="">
                         <div class="title_section">
-                            <h1></h1>
-                            <div></div>
+                            <span>Rising Stars in Action</span>
                         </div>
+                        <div class="layer"></div>
                     </article>
-                    <article>
-                        <img src="" alt="">
+                    <article id="mixt_league">
+                        <img src="./img/pexels-voley_3.jpg" alt="">
                         <div class="title_section">
-                            <h1></h1>
-                            <div></div>
+                            <span>Unbounded Competition</span>
                         </div>
+                        <div class="layer"></div>
                     </article>
-                    <article>
-                        <img src="" alt="">
+                    <article id="events_club">
+                        <img src="./img/campeonato.jpeg" alt="">
                         <div class="title_section">
-                            <h1></h1>
-                            <div></div>
+                            <span>Unforgettable Moments</span>
                         </div>
+                        <div class="layer"></div>
                     </article>
                 </div>
+                <section id="container_elements" class="container_elements">
+                    <div class="box_gallery">
+                        <aside class="items_navbar">
+                            <div class="title_box">
+                                <h1></h1>
+                                <div class="layer_box"></div>
+                            </div>
+                        </aside>
+                        <div class="cont_img">
+
+                        </div>
+                        <span class="box_quit">
+                            <img src="./img/icon/x.svg" alt="quit_windows">
+                        </span>
+                    </div>
+                </section>
             </div>
         </main>
         <footer>
@@ -136,5 +156,6 @@
             </div>
         </footer>
     </div>
+    <script src="./js/gallery.js"></script>
 </body>
 </html>
