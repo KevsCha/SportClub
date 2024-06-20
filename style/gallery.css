@@ -69,9 +69,35 @@ header{
     background-color: #00B9E5;
     border-radius: 25px;
 }
-/*-------------------  ---------------------*/
+/*-------------------contain_gallery--------------*/
+.bg_gallery{
+    padding-top: 70px;
+    width: 100%;
+}
+.contain_gallery{
+    padding: 120px 0;
+    margin: 0 auto;
+    max-width: 1148px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.contain_gallery h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'RobotoCondensed';
+    font-weight: bold;
+}
+.contain_gallery article{
+    width: 30%;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(12, 139, 139);
+}
 
-/*-------------------Footer-----------------*/
+/*-------------------Footer-----------------------*/
 footer{
     padding: 100px 0;
     background-color: #2e2e2e;
