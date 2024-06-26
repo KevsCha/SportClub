@@ -69,177 +69,28 @@ header{
     background-color: #00B9E5;
     border-radius: 25px;
 }
-/*-------------------contain_gallery--------------*/
-.bg_gallery{
-    padding-top: 70px;
-    width: 100%;
-    position: relative;
-}
-.bg_gallery #bg_volley{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(.5);
-}
-.contain_gallery{
-    position: relative;
-    padding: 120px 0;
-    margin: 0 auto;
-    max-width: 1148px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-.contain_gallery  h1{
-    text-align: center;
-    margin-bottom: 50px;
-    color: rgba(255, 255, 255, 0.985);
-    text-shadow: 0 0 20px #00b7e596;
-    font-family: 'RobotoCondensed';
-}
-.contain_gallery article{
-    width: 30%;
-    height: 180px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255, .3);
-    z-index: 5;
-    transition: all 0.3s linear;
-    cursor: pointer;
-}
-.contain_gallery article .layer{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 15;
-}
-.contain_gallery article::before{
-    content: "";
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: rotate(45deg);
-    top: -65%;
-    left: 10%;
-    transition: all 0.3s linear;
-}
-.contain_gallery article::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 30%;
-    bottom: -10%;
-    /* background-color: #c65d5d67; */
-    background:linear-gradient(to top, rgba(58, 58, 58, 0.508) , rgba(255, 255, 255, .6)   );
-    opacity: 1;
-    transition: all 0.2s linear;
-}
-.contain_gallery article:hover{
-    text-shadow: 0 0 20px #00B9E5;
-}
-.contain_gallery article:hover > img{
-    filter: brightness(.5);
-}
-.contain_gallery article:hover::after{
-     opacity: 0.5;
-     bottom: -15%;
-}
-.contain_gallery article:hover::before{
-    top: -50%;
-    left: 15%;
-}
-.contain_gallery article span{
-    color: #fff;
-    font-family: 'RobotoCondensed';
-    font-size: 30px;
-    text-align: center;
-    display: inline-block;
-    margin-left: 20px;
-} 
-.contain_gallery article > img{
-    width: 45%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: relative;
-    /* z-index: 10; */
-    transition: all 0.3s linear;
-}
-.contain_gallery article .title_section{
-    width: 50%;
-    position: relative;
-}
-/*!-----------------galeria_dinamica---------------  */
-.container_elements{
-    position: absolute;
-    width: 100%;
-    height: 90%;
-    /* background-color: #ffffff99; */
-    margin-top: 100px;
-    top: 0;
-    z-index: 20;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container_elements .box_gallery{
-    /* margin: 80px auto; */
-    max-width: 1148px;
-    width: 100%;
-    height: 80%;
-    display: flex;
-    position: relative;
-/* --------------adding_temp------ */
-    display: none;
-}
-.container_elements .box_gallery .items_navbar{
-    width: 25%;
-    height: 100%;
-    background-color: #00b7e576;
-}
-.container_elements .box_gallery .cont_img{
-    background-color: #ffffff99;
-    width: 100%;
-}
-.box_quit{
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: all .3s linear;
-}
+/*------------------------Contact--------------------- */
 
-.box_quit:hover{
-    scale: 1.2;
-}
-.box_quit > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-section.no_visible{
-    display: none;
-}
-.box_temp{
-    width: 100%;
-    height: 100%;
-}
-/*-------------------Footer-----------------------*/
+
+
+
+
+
+
+
+
+
+
+/*--------------------------footer--------------------------*/
 footer{
     padding-top: 100px;
     background-color: #2e2e2e;
     color: #fff;
     position: relative;
+}
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
+    font-family: 'RobotoCondensed';
+    color: #fff;
 }
 .list_contact{
     padding: 0;
@@ -359,13 +210,13 @@ footer{
 .galery_section .img_link:hover img[alt="chain"]{
     opacity: 1;
 }
-.contain_logo{
+.contain_log {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.contain_logo h1{
+.contain_log h1{
     font-family: 'RobotoCondensed';
 }
