@@ -106,7 +106,7 @@ const render = () => {
     requestAnimationFrame(render);
     y = lerp(y, scrollY, .1);
     dispose(y);
-    console.log('hola');
+    // console.log('hola');
     scrollSpeed = y - oldScrollY;
     oldScrollY = y;
 
