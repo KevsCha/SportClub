@@ -1656,7 +1656,9 @@ textarea.form-control {
   height: auto; }
 
 .form-group {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem; 
+  position: relative;
+}
 
 .form-text {
   display: block;
@@ -8245,7 +8247,9 @@ textarea.form-control {
 #contactForm .error {
   color: red;
   font-size: 12px; }
-
+#contactForm .error_me{
+  position: absolute;
+}
 #contactForm .form-control {
   font-size: 16px; }
 
