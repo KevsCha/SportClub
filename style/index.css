@@ -230,20 +230,19 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: radial-gradient(circle,rgb(29, 132, 158),  #091933)  ;
+    background: radial-gradient(circle,rgb(29, 132, 158, .5),  #091933), url('../img/pexels-pavel-danilyuk-6203572.jpg');
     background-position: center;
     background-size: cover;
     color: #000;
     overflow: hidden;
     position: relative;
-    /* margin-top: -100px; */
 }
 .event_week::before{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 30%;
+    width: 340px;
     height: 140%;
     background-image: url('../img/figure_voley.png');
     background-size: cover;
@@ -255,8 +254,8 @@ header{
     content: '';
     position: absolute;
     top: 10%;
-    right: 0%;
-    width: 40%;
+    right: -5%;
+    width: 570px;
     height: 140%;
     background-image: url('../img/figure_voley_2.png');
     background-size: cover;
@@ -276,6 +275,11 @@ header{
     justify-content: center;
     align-items: center;
     position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'RobotoCondensed';
+    color: #fff;
+    text-shadow: 0 0 45px #00B9E5;
 }
 .event_week .event_item::after{
     content: 'VS';
@@ -300,6 +304,11 @@ header{
 .event_week .contain_teams img{
     width: 250px;
     height: 250px;
+}
+.event_week .event_item .event_sets{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 /*--------------- section_news------------------ */
 .section_news{
@@ -432,7 +441,7 @@ footer{
     padding: 0;
 }
 .list_contact a, .links_section a{
-    color: #00B9E5;
+    color: #1EBDD3;
     text-decoration: none;
     font-size: 16px;
     transition: all 0.1s linear;
