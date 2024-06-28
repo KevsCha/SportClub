@@ -198,7 +198,7 @@ header{
     display: flex;
     position: relative;
 /* --------------adding_temp------ */
-    display: none;
+    /* display: none; */
 }
 .container_elements .box_gallery .items_navbar{
     width: 25%;
