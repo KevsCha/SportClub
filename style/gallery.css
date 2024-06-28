@@ -99,6 +99,7 @@ header{
     color: rgba(255, 255, 255, 0.985);
     text-shadow: 0 0 20px #00b7e596;
     font-family: 'RobotoCondensed';
+    transition: all 0.3s linear;
 }
 .contain_gallery article{
     width: 30%;
@@ -111,6 +112,32 @@ header{
     z-index: 5;
     transition: all 0.3s linear;
     cursor: pointer;
+}
+.contain_gallery article.hide{
+    animation: hide 0.5s linear forwards;
+}
+.contain_gallery article.show{
+    animation: show 0.5s linear forwards;
+}
+@keyframes hide{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+@keyframes show{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 .contain_gallery article .layer{
     width: 100%;
@@ -178,6 +205,11 @@ header{
     position: relative;
 }
 /*!-----------------galeria_dinamica---------------  */
+.container_elements.no_visible{
+    display: none;
+    /* opacity: 0;
+    transition: all 0.5s linear; */
+}
 .container_elements{
     position: absolute;
     width: 100%;
@@ -189,6 +221,14 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0; 
+    animation: show_gallery 0.5s .3s linear forwards;
+    transition: all 0.5s linear;
+}
+@keyframes show_gallery{
+    to{
+        opacity: 1;
+    }
 }
 .container_elements .box_gallery{
     /* margin: 80px auto; */
@@ -197,17 +237,106 @@ header{
     height: 80%;
     display: flex;
     position: relative;
-/* --------------adding_temp------ */
-    /* display: none; */
+    box-shadow: 0 0 30px 5px #000;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
 .container_elements .box_gallery .items_navbar{
     width: 25%;
-    height: 100%;
-    background-color: #00b7e576;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+    gap: 40px;
+    /* padding: 40px 0; */
+    font-family: 'RobotoCondensed';
+    /* position: relative; */
+    /* background-color: #00b7e576; */
+}
+.box_gallery .items_navbar h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0 0 20px #00b7e596;
+}
+.box_gallery .items_navbar .layer_line{
+    width: 85%;
+    height: 3px;
+    position: relative;
+    /* bottom: 0; */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00b7e596;
+    border-radius: 5px;
+    z-index: 10;
+
+}
+.box_gallery .items_navbar .tot_selector{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+} 
+.box_gallery .items_navbar .tot_selector .selector_img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 2px solid white;
+    filter: brightness(.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.box_gallery .items_navbar .tot_selector .selector_img.true{
+    filter: brightness(1);
+}
+.box_gallery .items_navbar .tot_selector .selector_img.true div{
+    opacity: 1;
+}
+.box_gallery .items_navbar .tot_selector .selector_img:active{
+    filter: brightness(1);
+}
+.box_gallery .items_navbar .tot_selector .selector_img div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0;
+}
+.box_gallery .items_navbar .tot_selector .selector_img:hover {
+    filter: brightness(1);
+}
+.box_gallery .items_navbar .tot_selector .selector_img:hover div{
+    opacity: 1;
 }
 .container_elements .box_gallery .cont_img{
-    background-color: #ffffff99;
     width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #ffffff99;
+}
+.container_elements .box_gallery .cont_img img{
+    position: absolute;
+    /* opacity: 0; */
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    /* display: none; */
+}
+.container_elements .box_gallery .cont_img img.true{
+    opacity: 1;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.3s linear;
 }
 .box_quit{
     position: absolute;
@@ -215,6 +344,7 @@ header{
     right: 15px;
     width: 40px;
     height: 40px;
+    z-index: 5;
     cursor: pointer;
     transition: all .3s linear;
 }
@@ -227,9 +357,8 @@ header{
     height: 100%;
     object-fit: cover;
 }
-section.no_visible{
-    display: none;
-}
+
+
 .box_temp{
     width: 100%;
     height: 100%;

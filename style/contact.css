@@ -70,9 +70,33 @@ header{
     border-radius: 25px;
 }
 /*------------------------Contact--------------------- */
-
-
-
+/* .txt_bg{
+    background-image: url('../img/bg_for_tittle.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.txt_bg{
+    /* background-color: #00b7e596; */
+    /* padding: 100px 0; */
+    position: relative;
+    z-index: 1;
+}
+h1.heading-section {
+    font-size: 65px;
+    color: #fff;
+    text-shadow: 0 0 20px #00b7e596;
+    position: relative;
+    z-index: 1;
+}
+.txt_bg > div img{
+    position: absolute;
+    object-fit: cover;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+}
 
 
 

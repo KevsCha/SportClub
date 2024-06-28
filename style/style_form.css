@@ -8128,12 +8128,6 @@ h1, h2, h3, h4, h5,
 .ftco-no-pb {
   padding-bottom: 0; }
 
-.heading-section {
-  font-size: 65px;
-  color: #fff;
-  text-shadow: 0 0 20px #00b7e596;
-}
-
 .img {
   background-size: cover;
   background-repeat: no-repeat;

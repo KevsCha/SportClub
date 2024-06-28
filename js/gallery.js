@@ -12,13 +12,18 @@ console.log(obj_aside.title);
 const file_arr = [...article_img];
 // -----------------------function gallery content img---------------
 function aside_modification(item){
-    console.log(item);
+    console.log('modificar contenido');
     obj_aside.title.innerText = item.children[1].children[0].innerText;
 }
+
 // -----------------------function validate clase, remove class visible
 function validate_class(arr){
     for (const clase of arr) {
         if (clase === 'no_visible'){
+            console.log(container_elements.previousElementSibling.children[0]);
+            setTimeout(() => {
+                container_elements.previousElementSibling.children[0].style.filter = 'blur(5px)';
+            }, 500);
             container_elements.classList.remove('no_visible');
             return true;
         }
@@ -33,20 +38,25 @@ for (const box of file_arr) {
         let arr_class = container_elements.className.split(' ');
         let open_gallery = validate_class(arr_class);
         if (open_gallery == true){
+            for (const box_hide of file_arr)
+                box_hide.classList.add('hide');
             aside_modification(id_item);
-            console.log('ventana abierta');
         }
-
     });
 }
-
 // -------------------quit_windows img_gallery----------------
 const btn_exit = document.querySelector('.box_quit');
 if (btn_exit != null){
-
     btn_exit.addEventListener('click', () => {
         console.log(container_elements);
         container_elements.classList.add('no_visible');
+        for (const box_hide of file_arr){
+            box_hide.classList.remove('hide');
+            box_hide.classList.toggle('show');
+            container_elements.previousElementSibling.children[0].style.filter = 'blur(0px)';
+            setTimeout(() => {
+                box_hide.classList.remove('show');
+            }, 500);
+        }
     });
 }
-    
