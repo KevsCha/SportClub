@@ -177,3 +177,7 @@ li{
 .contain_style{
     position: relative;
 }
+a{
+    text-decoration: none;
+    /* color: #000; */
+}
