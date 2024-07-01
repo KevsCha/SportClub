@@ -69,7 +69,29 @@ header{
     background-color: #00B9E5;
     border-radius: 25px;
 }
-/*--------------------------------------------*/
+/*-----------------------Context_tour---------------------*/
+section.context_tour{
+    padding: 120px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: #2e2e2e; */
+    /* color: #fff; */
+}
+section.context_tour h1{
+    font-size: 70px;
+    font-family: 'RobotoCondensed';
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1EBDD3;
+}
+section.context_tour h3{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'RobotoCondensed';
+    color: #1EBDD3;
+    /* text-shadow: 0 0 5px #00B9E5; */
+    margin-bottom: 20px;
+}
 /*-----------------------footer---------------------*/
 footer{
     padding: 100px 0;
