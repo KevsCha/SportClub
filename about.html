@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="./style/about.css">
 	<link rel="stylesheet" href="./style/responsive.css">
 	<link rel="stylesheet" href="./style/general.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>AboutWarriors</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
                 <ul>
                     <li class=""><a href="./index.html">HOME</a></li>
                     <li class="nav_active"><a href="about.html">ABOUT</a></li>
-                    <li><a href="teams.html">TOURNAMENT</a></li>
+                    <li><a href="tournament.html">TOURNAMENT</a></li>
                     <li><a href="gallery.html">GALLERY</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                     <div class="layout"></div>
@@ -39,14 +40,23 @@
             </div>
             <!-- coontexto -->
             <div class="context_about">
-            <div class="about_table">
-                <img src="https://media.gcflearnfree.org/content/61d5c0d1c4da77185ca9f225_01_05_2022/Porcentajes-de-frecuencia-relativa-acumulada-estadi%CC%81stica.png" alt="img_temp">
-            </div>
-            <div class="about_info">
-                <h1>About Warriors</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet maiores adipisci quasi odit dolore facere possimus aliquam doloribus sunt, repellendus reprehenderit earum quaerat porro, id enim officiis fuga inventore.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur maiores ex maxime aliquid fuga libero! Minus maiores vero distinctio a id suscipit facilis, asperiores illum incidunt, magni molestiae reprehenderit tempora?</p>
-            </div>
+                <div class="about_table">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="about_info">
+                    <h2>About Warriors Volleyball Club</h2>
+                    <p>Fundado en 2005, el Club de Voleibol Warriors ha crecido hasta convertirse en un referente de excelencia y pasión en la comunidad del voleibol. Nuestro viaje comenzó con un pequeño grupo de entusiastas dedicados que compartían una visión común: promover y desarrollar el voleibol a todos los niveles. A lo largo de los años, el Club de Voleibol Warriors ha florecido, construyendo una reputación tanto por su éxito competitivo como por su compromiso con la comunidad.</p>
+                    <p>Los orígenes del Club de Voleibol Warriors se remontan a un puñado de amantes del voleibol decididos a crear un ambiente de apoyo y dinámico para jugadores de todas las edades y niveles de habilidad. Comenzando con solo un equipo, nuestro compromiso con fomentar el talento y promover el deporte nos llevó a expandirnos rápidamente. Nuestros primeros días estuvieron marcados por un fuerte sentido de camaradería y una incansable determinación por mejorar, sentando las bases para el próspero club que somos hoy.</p>
+                </div>
+                <div class="about_extra">
+                    <h2>Nuestro Trayecto</h2>
+                    <p>Desde nuestros humildes comienzos, el Club de Voleibol Warriors ha crecido en tamaño y prestigio. Ahora contamos con una amplia gama de equipos, incluidos equipos masculinos, femeninos y mixtos, compitiendo en diferentes grupos de edad y niveles de habilidad. Nuestros equipos senior han ganado reconocimientos en campeonatos regionales y nacionales, demostrando nuestra competitividad y dedicación a la excelencia.
+                    </p>
+                    <p>Nuestros programas juveniles y junior también han desempeñado un papel crucial en nuestro éxito. Al proporcionar a los jóvenes atletas entrenamiento y oportunidades de desarrollo de primer nivel, hemos cultivado una nueva generación de talento en el voleibol. Muchos de nuestros jugadores junior han llegado a representar a sus escuelas, colegios e incluso equipos nacionales, lo que es un testimonio de la calidad de nuestros programas de formación.</p>
+                    <h2> Nuestros Valores y Visión</h2>
+                    <p>En el Club de Voleibol Warriors, creemos que el éxito en la cancha va de la mano con la construcción de un carácter fuerte fuera de ella. Nuestros entrenadores enfatizan no solo las habilidades técnicas, sino también la importancia del trabajo en equipo, la disciplina y el espíritu deportivo. Nos esforzamos por crear un ambiente inclusivo y de apoyo donde cada jugador pueda alcanzar su máximo potencial.</p>
+                    <p> Al mirar hacia el futuro, nuestro objetivo sigue siendo el mismo: continuar promoviendo y avanzando en el deporte del voleibol mientras nutrimos los talentos del mañana. Estamos comprometidos a expandir nuestros programas, aumentar nuestro alcance comunitario y alcanzar alturas aún mayores en el mundo del voleibol.</p>
+                </div>
             </div>
             <!-- Servicios -->
             <div class="service_about">
@@ -55,7 +65,6 @@
                         <h2>Explora Nuestros Equipos de Voleibol</h2>
 						<p>Con 67 equipos masculinos, femeninos y mixtos, ofrecemos oportunidades para todos los niveles y edades, garantizando una experiencia competitiva y enriquecedora.</p>
 						<p>Asimismo, apoyamos la equidad de género mediante la creación de equipos mixtos, reflejando nuestro firme compromiso con la inclusión y la igualdad en el ámbito deportivo.</p>
-
                         <div class="contain_list">
                             <ul>
                                 <li>Federado Masc/Fem (Senior)</li>
@@ -79,8 +88,8 @@
                     <article class="info_work">
                         <h2>¿Eres un Apasionado del Voleibol?</h2>
                         <h5>¡Descubre tu Lugar con Nosotros!</h5>
-                        <p>En nuestro club, valoramos el entusiasmo y la dedicación de todas las personas que contribuyen al mundo del voleibol. Ya seas un entrenador experimentado, un árbitro comprometido o un colaborador interesado en apoyar a nuestros equipos, hay un lugar para ti en nuestra comunidad. Creemos en el poder del trabajo en equipo y en la importancia de desarrollar tanto el talento individual como el colectivo.</p>
-                        <p>Ofrecemos un entorno dinámico y de apoyo, donde cada miembro del equipo tiene la oportunidad de crecer y contribuir significativamente. Desde la formación continua para entrenadores y árbitros, hasta oportunidades de colaboración y patrocinio, estamos comprometidos con el desarrollo y éxito de nuestros equipos y eventos. ¡Únete a nosotros y sé parte de una comunidad vibrante que vive y respira voleibol!</p>
+                        <p>En nuestro club, valoramos el entusiasmo y la dedicación de todos los que contribuyen al voleibol. Ya seas entrenador, árbitro o colaborador, hay un lugar para ti. Creemos en el poder del trabajo en equipo y en desarrollar tanto el talento individual como colectivo.</p>
+                        <p>Ofrecemos un entorno de apoyo y oportunidades de crecimiento. Desde formación continua para entrenadores y árbitros, hasta colaboraciones y patrocinios, estamos comprometidos con el éxito de nuestros equipos y eventos. ¡Únete a nuestra vibrante comunidad de voleibol!</p>
                         <button>Contact Us</button>
                     </article>
                     <article class="service_work">
@@ -89,8 +98,8 @@
                                 <img src="./img/service_coach.jpeg" alt="">
                             </div>
                             <div class="info_thumbnail">
-                                <h4>ornare Quam justo telluv</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum totam neque nam quod similique voluptates.</p>
+                                <h4>Entrenadores</h4>
+                                <p>Únete a nuestro club como entrenador y ayuda a desarrollar el talento de nuestros equipos en un entorno de excelencia y crecimiento.</p>
                             </div>
                         </section>
                         <section class="thumbnail_card">
@@ -98,8 +107,8 @@
                                 <img src="./img/service_referee.jpeg" alt="">
                             </div>
                             <div class="info_thumbnail">
-                                <h4>ornare Quam justo telluv</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum totam neque nam quod similique voluptates.</p>
+                                <h4>Arbitros</h4>
+                                <p>Buscamos árbitros dedicados que quieran formar parte de nuestra comunidad y mejorar continuamente sus habilidades en el voleibol.</p>
                             </div>
                         </section>
                         <section class="thumbnail_card">
@@ -107,8 +116,8 @@
                                 <img src="./img/service_sponsors.jpeg" alt="">
                             </div>
                             <div class="info_thumbnail">
-                                <h4>ornare Quam justo telluv</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum totam neque nam quod similique voluptates.</p>
+                                <h4>Colaboradores</h4>
+                                <p>Contribuye al éxito de nuestro club como colaborador, patrocinador o voluntario y ayuda a impulsar a nuestros equipos.</p>
                             </div>
                         </section>
                     </article>
@@ -131,7 +140,7 @@
                 </article>
             </div>
             <!-- Equipos federados -->
-            <div class="federados_team">
+            <div id="staff" class="federados_team">
                 <div class="container">
                     <h2 class="text-center mb-5">Conoce a Nuestros Entrenadores y Staff</h2>
                     <div class="row mb-5">
@@ -263,4 +272,5 @@
 
     </div>
 </body>
+<script src="./js/about.js"></script>
 </html>

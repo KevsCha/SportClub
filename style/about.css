@@ -83,6 +83,7 @@ header{
 .banner_club div{
     width: 100%;
     height: 100%;
+    font-family: 'RobotoCondensed';
     backdrop-filter: brightness(.8);
     padding: 0 0 2rem 2rem;
     display: flex;
@@ -93,12 +94,12 @@ header{
     font-weight: bold;
     color: #fff;
     text-shadow: 0 0 15px #00B9E5;
-    font-size: 100px;
+    font-size: 70px;
     margin: 0;
 }
 .banner_club h3{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
     text-shadow: 0 0 15px #00B9E5;
     margin: 0;
@@ -109,16 +110,19 @@ header{
     margin: 0 auto;
     max-width: 1148px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .context_about .about_table{
     width: 40%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     
+}
+.about_table canvas{
+    width: 100% !important;
+    height: 60% !important;
 }
 .context_about .about_table img{
     width: 100%;
@@ -127,14 +131,18 @@ header{
 .context_about .about_info{
     width: 50%;
 }
-.context_about .about_info h1{
-    font-size: 40px;
+.context_about .about_info h2, 
+.context_about .about_extra h2,
+.service_about article h2{
+    font-size: 45px;
     font-weight: bold;
-    color: #fff;
-    text-shadow: 0 0 5px #00B9E5;
+    font-family: 'RobotoCondensed';
+    color: #1EBDD3;
+    /* text-shadow: 0 0 5px #00B9E5; */
     margin-bottom: 20px;
 }
-.context_about .about_info p{
+.context_about .about_info p, 
+.context_about .about_extra p{
     font-size: 18px;
     color: #7a7a7a;
     /* text-shadow: 0 0 5px #00B9E5; */
@@ -190,15 +198,30 @@ header{
     /* padding: 20px 0; */
 }
 .service_work > .thumbnail_card .img_thumbnail{
-    width: 150px;
+    width: 130px;
     height: 80%;
-    margin-right: 35px;
+    margin-right: 15px;
     display: flex;
 }
 .service_work > .thumbnail_card .img_thumbnail img{
-    width: 100%;
+    width: inherit;
     height: 100%;
     object-fit: cover;
+}
+.service_about .work_about button{
+    padding: 10px 20px; 
+    font-size: 20px;
+    border-radius: 5px;    
+    background-color: rgba(169, 169, 169, 0.7);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.2s linear;
+}
+.service_about .work_about button:hover{
+    background-color: #00B9E5;
+    color: #fff;
+    scale: 1.1;
 }
 .service_about .bg_radial{
     width: 100%;
@@ -240,6 +263,12 @@ header{
 /* -------------------------FEDERADOS_TEAM------------------- */
 .federados_team{
     padding: 100px 0;
+}
+.federados_team h2{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'RobotoCondensed';
+    color: #1EBDD3;
 }
 .federados_team .container > .row div.card{
     overflow: hidden;
