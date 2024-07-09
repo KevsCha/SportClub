@@ -1,7 +1,7 @@
+console.log("cambios");
 (function($) {
 
 	"use strict";
-
 
   // Form
 	var contactForm = function() {
@@ -33,7 +33,7 @@
 
 					$.ajax({   	
 				      type: "POST",
-				      url: "php/sendEmail.php",
+				      url: "../php/sendEmail.php",
 				      data: $(form).serialize(),
 
 				      beforeSend: function() { 
