@@ -1,8 +1,41 @@
 /*!--------------------page_index------------------------- */
+/* 
+    ?Medidas de bootstrap
+    *Extra small <576px
+    *Small ≥576px
+    *Medium ≥768px
+    *Large ≥992px
+    *Extra large ≥1200px
+    *Extra Extra  large ≥1400px
+
+*/
+@media only screen and(width < 1400px){
+    
+}
 /**-------next_macth----- */
 @media only screen and (width < 1248px){
-    .next_match{
-        display: flex;
+    div.next_events .next_match{
+        display: none;
         flex-direction: column;
     }
+}
+@media only screen and(width < 1200px){
+    .header_nav .logo{
+
+    }
+    .header_nav ul{
+
+    }
+    .header_nav ul li{
+        height: 80px;
+    }
+}
+@media only screen and(width < 992px){
+    
+}
+@media only screen and(width < 768px){
+    
+}
+@media only screen and(width < 576px){
+    
 }
