@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.w3.org/2001/XMLSchema-instance"> <!-- aqui se escribe el dominio y abajo el logo-->
+    <url>
+        <loc>https://www.example.com/</loc>
+    </url>
+    <url>
+        <loc>https://www.example.com/about.html</loc>
+    </url>
+    <url>
+        <loc>https://www.example.com/contact.html</loc>
+        <lastmode>2024-07-30:09:54:00+05:00</lastmode>
+    </url>
+    <url>
+        <loc>https://www.example.com/gallery.html</loc>
+        <image:image>
+            <image:loc>http://www.idealizarte.com/paisaje.jpg</image:loc>
+        </image:image>
+        <lastmode>2024-07-30:09:54:00+05:00</lastmode>
+    </url>
+</urlset>
