@@ -31,6 +31,7 @@
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.2s linear;
+    user-select: none;
     transition: 0.2s linear;
 }
 .slider_contain .slider_btns button:hover{
@@ -79,14 +80,16 @@
     /* font-family: 'News_Wide'; */
     text-shadow: 0 0 15px black;
     opacity: 0;
-    animation: displace 0.5s 0.2s linear forwards;
+    transform: translateX(350px);
+    animation: displace 0.3s 0.7s linear forwards;
 }
-.slide_info span{
+.slide_info h1{
     color: #fff;
     font-family: 'RobotoCondensed';
     text-shadow: 0 0 15px #00B9E5;
-    animation: text_glow 1.5s linear infinite;
-    font-size: 159px;
+    opacity: 0;
+    animation: text_glow 1.5s linear infinite, text_opa .5s .2s linear forwards;
+    font-size: 160px;
 }
 @keyframes text_glow{
     0%{
@@ -99,25 +102,12 @@
         text-shadow: 0 0 15px #00B9E5;
     }
 }
-
-.slide_info h1{
-    max-width: 20ch;
-    font-size: 90px;
-    font-weight: bold;
-    text-shadow: 0 0 15px black;
-    opacity: 0;
-    animation: displace .5s .5s linear forwards;
+@keyframes text_opa {
+    to{
+        opacity: 1;
+    }
 }
 .slide_info h2{
-    font-size: 25px;
-    font-weight: bold;
-    color: #00B9E5;
-    text-shadow: 0 0 15px black;
-    transform: translateX(350px);
-    opacity: 0;
-    animation: displace 0.3s .7s linear forwards;
-}
-.slide_info p{
     font-size: 25px;
     font-weight: bold;
     color: #00B9E5;
@@ -129,7 +119,6 @@
 .slide_item:nth-child(1) .slide_info button{
     padding: 15px 40px;
     background-color: rgba(169, 169, 169, 0.5);
-    /* background-image: radial-gradient(rgb(29, 132, 158),  #091933)  ; */
     border: none;
     border-radius: 5px;
     font-weight: bold;
