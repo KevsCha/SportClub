@@ -1,4 +1,3 @@
-console.log("cambios");
 (function($) {
 
 	"use strict";
