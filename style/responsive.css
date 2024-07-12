@@ -9,15 +9,20 @@
     *Extra Extra  large ≥1400px
 
 */
-@media only screen and(width < 1400px){
-    
+@media only screen and (width < 1400px){
+    .event_week::after {
+        right: -15%;
+    }
+    .lasted_result .next_match {
+        font-size: 1em;
+    }
+    .lasted_result .next_match .teams_vs::after{
+        font-size: 1.5em;
+    }
 }
 /**-------next_macth----- */
 @media only screen and (width < 1248px){
-    div.next_events .next_match{
-        display: none;
-        flex-direction: column;
-    }
+    
 }
 @media only screen and (width < 1200px){
     .header_nav .logo{
@@ -32,6 +37,37 @@
     .header_nav ul li{
         height: 80px;
         line-height: 80px;
+    }
+    /*----------------------Main_index----------------------*/
+    div.next_events .next_match{
+        flex-direction: column;
+    }
+    .event_week::after {
+        right: -22%;
+    }
+    .event_week .contain_teams {
+        width: 550px;
+    }
+    .event_week .contain_teams img {
+        width: 225px;
+        height: 225px;
+    }
+    div.next_events .next_match {
+        padding: 10px 0px;
+    }
+    .next_events .next_match .teams_vs {
+        gap: 130px;
+    }
+    .next_events .next_match .teams_vs > div img {
+        width: 130px;
+        height: 130px;
+    }
+    .lasted_result .next_match .teams_vs > div img{
+        width: 50px;
+        height: 50px;
+    }
+    .lasted_result .next_match p{
+        margin: 0;
     }
 }
 @media only screen and (width < 992px){
@@ -50,8 +86,7 @@
     .header_nav ul a{
         font-size: 14px;
     }
-    /*-----------------------Main-------------------*/
-    /* slide_contain */
+    /*----------------------Main_index----------------------*/
     .slide_item img {
         filter: brightness(.5);
     }
@@ -73,6 +108,32 @@
     }
     .slide_item:nth-child(1) .slide_info button{
         margin: 25px 0;
+    }
+    .event_week::before, .event_week::after{
+        display: none;
+    }
+    .event_week .event_item .event_sets {
+        justify-content: center;
+        gap: 40px;
+    }
+    aside.table_result .next_match {
+        gap: 5px 0;
+    }
+    .lasted_result .next_match .teams_vs > div img {
+        width: 130px;
+        height: 130px;
+    }
+    .lasted_result .next_match{
+        font-size: 1.5em;
+    }
+    .lasted_result .next_match p{
+        margin: 0 10px;
+    }
+    .lasted_result .next_match .teams_vs {
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: space-around;
     }
 }
 @media only screen and (width < 768px){
@@ -162,7 +223,7 @@
             transform: translateX(0);
         }
     }
-/*---------------------- Main----------------------*/
+    /*----------------------Main_index----------------------*/
     .slide_info h3{
         font-size: 20px;
     }
@@ -179,6 +240,19 @@
         padding: 10px 25px;
         font-size: 20px;
     }
+    .event_week .contain_teams img {
+        width: 200px;
+        height: 200px;
+    }
+    .event_week .event_item::after{
+        top: 40%;
+    }
+    .event_week .event_item .event_sets {
+        flex-wrap: wrap;
+        width: 70%;
+        gap: 0 40px;
+    }
+
 }
 @media only screen and (width < 576px){
     .header_nav ul{
@@ -190,7 +264,7 @@
     }
     /*----------------------Main_index----------------------*/
     .slide_info h1{
-        font-size: 85px;
+        font-size: 95px;
     }
     .slide_item:nth-child(1) .slide_info {
         text-align: center;
@@ -207,6 +281,40 @@
         padding: 10px 25px;
         font-size: 15px;
     }
+    .event_week { 
+        padding: 40px 0;
+    }
+    .event_week .event_item {
+        font-size: 30px;
+    }
+    .event_week .contain_teams {
+        width: 100%;
+        gap: 0 20px;
+        justify-content: space-around;
+    }
+    .event_week .contain_teams img {
+        width: 175px;
+        height: 175px;
+    }
+    .event_week .event_item::after {
+        top: 40%;
+    }
+    .event_week .event_item .event_sets {
+        flex-wrap: wrap;
+        width: 75%;
+        gap: 0 40px;
+    }
+    .intro h1 {
+        font-size: 40px;
+    }
+    section.intro{
+        padding-top: 50px;
+    }
+}
+@media only screen and (width < 425px){
+    .slide_info h1{
+        font-size: 85px;
+    }
 }
 @media only screen and (width < 375px){
     .hamburguer_menu{
@@ -220,5 +328,8 @@
     }
     .slide_info h2 {
         font-size: 15px;
+    }
+    .intro h1 {
+        font-size: 40px;
     }
 }
