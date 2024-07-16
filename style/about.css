@@ -4,7 +4,7 @@
     width: 100%;
     height: 500px;
     position: relative;
-    background-image: url('../img/banner_about.jpg');
+    background-image:linear-gradient(to right, #06c8c1a1, #00b7e57a), url('../img/banner_about.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,31 +23,33 @@
     font-weight: bold;
     color: #fff;
     text-shadow: 0 0 15px #00B9E5;
-    font-size: 70px;
+    font-size: 85px;
     margin: 0;
 }
 .banner_club h3{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     color: #fff;
     text-shadow: 0 0 15px #00B9E5;
     margin: 0;
 }
 /* ---------------Context--------------- */
 .context_about{
-    padding: 100px 0;
+    padding: 100px 30px;
     margin: 0 auto;
-    max-width: 1148px;
+    max-width: 1320px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+.context_about .about_top{
+    display: flex;
     justify-content: space-between;
 }
 .context_about .about_table{
-    width: 40%;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .about_table canvas{
     width: 100% !important;
@@ -62,8 +64,9 @@
 }
 .context_about .about_info h2, 
 .context_about .about_extra h2,
-.service_about article h2{
-    font-size: 45px;
+.service_about article h2,
+.federados_team h2{
+    font-size: 55px;
     font-weight: bold;
     font-family: 'RobotoCondensed';
     color: #1EBDD3;
@@ -105,6 +108,11 @@
 .service_about .teams_about .contain_list{
     /* margin: 25px auto; */
     display: flex;
+    gap: 15px;
+    
+}
+.service_about .teams_about .contain_list ul{
+    padding: 0;
 }
 .service_about .work_about > article{
     width: 50%;
@@ -141,7 +149,7 @@
     padding: 10px 20px; 
     font-size: 20px;
     border-radius: 5px;    
-    background-color: rgba(169, 169, 169, 0.7);
+    background-color: #7a7a7a;
     border: none;
     color: #fff;
     font-weight: bold;
@@ -192,12 +200,6 @@
 /* -------------------------FEDERADOS_TEAM------------------- */
 .federados_team{
     padding: 100px 0;
-}
-.federados_team h2{
-    font-size: 45px;
-    font-weight: bold;
-    font-family: 'RobotoCondensed';
-    color: #1EBDD3;
 }
 .federados_team .container > .row div.card{
     overflow: hidden;

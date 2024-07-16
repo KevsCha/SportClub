@@ -19,6 +19,23 @@
     .lasted_result .next_match .teams_vs::after{
         font-size: 1.5em;
     }
+    .contain_stories{
+        padding: 0 25px;
+    }
+    .contain_stories .stories_slide{
+        width: 100%;
+    }
+    .stories_slide article.card_stories{
+        width: 265px;
+    }
+    article.card_stories .img_stories {
+        height: 280px;
+    }
+    .contain_stories .btn_stories {
+        right: 40px;
+    }
+    /* --------------------page_Gallery-------------------- */
+
 }
 /**-------next_macth----- */
 @media only screen and (width < 1248px){
@@ -68,6 +85,23 @@
     }
     .lasted_result .next_match p{
         margin: 0;
+    }
+    .contain_stories{
+        max-width: 992px;
+        padding: 0 25px;
+    }
+    .contain_stories .stories_slide{
+        width: 100%;
+    }
+    .stories_slide article.card_stories{
+        width: 290px;
+    }
+    article.card_stories .img_stories {
+        height: 280px;
+    }
+    /* --------------------page_Gallery-------------------- */
+    .contain_gallery article span {
+        font-size: 25px;
     }
 }
 @media only screen and (width < 992px){
@@ -130,10 +164,49 @@
         margin: 0 10px;
     }
     .lasted_result .next_match .teams_vs {
-        width: 100%;
-        display: flex;
-        position: relative;
         justify-content: space-around;
+    }
+    .contain_stories{
+        max-width: 768px;
+    }
+    .stories_slide article.card_stories{
+        width: 216px;
+    }
+    article.card_stories .img_stories {
+        height: 180px;
+    }
+    /* ------------------Page_About------------------ */
+    .banner_club p {
+        font-size: 70px;
+    }
+    .banner_club h3 {
+        font-size: 30px;
+    }
+    .about_table canvas{
+        width: 100% !important;
+        height: 40% !important;
+    }
+    .service_about .teams_about > article,
+    .service_about .work_about > article{
+        min-height: 750px;
+    }
+
+    /* *bg */
+    .service_about .bg_radial > div {
+
+    }
+    .service_about .bg_radial > div > div{
+        min-height: 750px;
+        width: 100%;
+    }
+    /* --------------------page_Gallery-------------------- */
+    .contain_gallery article {
+        width: 37%;
+        height: 180px;
+    }
+    /* --------------------page_tournament-------------------- */
+    .container_tables {
+        overflow-x: scroll;
     }
 }
 @media only screen and (width < 768px){
@@ -142,10 +215,6 @@
         position: absolute;
         right: 20px;
         top: 20px;
-    }
-    .header_nav{
-        /* display: none; */
-        /* overflow: hidden; */
     }
     .header_nav .logo{
         display: none;
@@ -252,7 +321,108 @@
         width: 70%;
         gap: 0 40px;
     }
+    .next_match{
+        font-size: 1.2em;
+    }
+    .lasted_result .next_match {
+        font-size: 1.2em;
+    }
+    .next_events .next_match .teams_vs {
+        gap: 75px;
+    }
+    .next_events .next_match .teams_vs > div img {
+        width: 90px;
+        height: 90px;
+    }
+    aside.table_result .next_match {
+        padding: 10px 0;
+    }
+    .lasted_result .next_match .teams_vs {
+        width: auto;
+        justify-content: space-between;
+        gap: 75px;
+    }
+    .lasted_result .next_match .teams_vs > div img {
+        width: 90px;
+        height: 90px;
+    }
+    .contain_stories{
+        max-width: 600px;
+    }
+    .stories_slide article.card_stories{
+        width: 246px;
+    }
+    article.card_stories .img_stories {
+        height: 200px;
+    }
+    .contain_stories .btn_stories {
+        bottom: -60px;
+        right: 50%;
+        top: auto;
+        transform: translateX(50px);
+    }
+    /* ------------------page_ABOUT------------------*/
+    .banner_club p {
+        font-size: 60px;
+    }
+    .banner_club h3 {
+        font-size: 25px;
+    }  
+    .context_about .about_top{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+    .context_about .about_info{
+        width: 100%;
+    }
+    .context_about .about_table{
+        width: 80%;
+    }
+    .about_table canvas{
+        width: 100% !important;
+        height: 250px !important;
+        min-height: 250px !important;
+    }
+    .service_about > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .service_about .teams_about > article,
+    .service_about .work_about > article{
+        width: 100%;
+        min-height: 575px;
+    }
 
+    /* *bg */
+    .service_about .bg_radial > div {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+    }
+    .service_about .bg_radial > div > div{
+        min-height: 575px;
+        width: 100%;
+    }
+    /* --------------------page_Gallery-------------------- */
+    .contain_gallery article {
+        width: 75%;
+        height: 180px;
+    }
+    .contain_gallery h1 {
+        width: 70%;
+    }
+    .contain_gallery article::before {
+        top: -33%;
+    }
+    .contain_gallery article:hover::before {
+        top: -33%;
+        left: 33%;
+    }
 }
 @media only screen and (width < 576px){
     .header_nav ul{
@@ -304,17 +474,109 @@
         width: 75%;
         gap: 0 40px;
     }
-    .intro h1 {
-        font-size: 40px;
-    }
     section.intro{
         padding-top: 50px;
     }
+    .next_match{
+        font-size: 1em;
+    }
+    .lasted_result .next_match {
+        font-size: 1em;
+    }
+    .next_events .next_match .teams_vs > div img {
+        width: 70px;
+        height: 70px;
+    }
+    .lasted_result .next_match .teams_vs > div img {
+        width: 70px;
+        height: 70px;
+    }
+    .contain_stories{
+        max-width: 425px;
+    }
+    .stories_slide article.card_stories{
+        width: 350px;
+    }
+    article.card_stories .img_stories {
+        height: 200px;
+    }
+    /* -------------------Page_about------------------ */
+    .banner_club div {
+        padding-left: 0;
+        padding-bottom: 60px;
+        text-align: center;
+        backdrop-filter: brightness(.6);
+    }
+    .context_about {
+        padding: 50px 12px;
+    }
+    /* .banner_club p {
+        text-align: center;
+    }
+    .banner_club h3 {
+        text-align: center;
+    } */
+    .service_about .teams_about > article, 
+    .service_about .work_about > article {
+        padding: 20px 12px;
+    } 
+
+    .intro h1, 
+    .contain_map h1,
+    .context_about .about_info h2, 
+    .context_about .about_extra h2, 
+    .service_about article h2,
+    .federados_team h2,
+    section.context_tour h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+    /* --------------------page_Gallery-------------------- */
+    .contain_gallery h1 {
+        width: 90%;
+    }
+
 }
 @media only screen and (width < 425px){
     .slide_info h1{
         font-size: 85px;
     }
+    .event_week .contain_teams img {
+        width: 150px;
+        height: 150px;
+    }
+    .contain_stories{
+        max-width: 375px;
+    }
+    .stories_slide article.card_stories{
+        width: 315px;
+    }
+    /* ---------------------page_about-------------------- */
+    .banner_club p {
+        font-size: 55px;
+    }
+    .banner_club h3 {
+        font-size: 20px;
+    }
+    .service_about .teams_about > article,
+    .service_about .work_about > article{
+        width: 100%;
+        min-height: 790px;
+    }
+    .service_about .bg_radial > div > div{
+        min-height: 790px;
+        width: 100%;
+    }
+    .service_about .teams_about .contain_list{
+        flex-direction: column;
+        gap: initial;
+    }
+    /* --------------------page_Gallery-------------------- */
+    /* --------------------page_tournament-------------------- */
+    section.context_tour {
+        padding: 50px 12px;
+    }
+
 }
 @media only screen and (width < 375px){
     .hamburguer_menu{
@@ -329,7 +591,40 @@
     .slide_info h2 {
         font-size: 15px;
     }
-    .intro h1 {
-        font-size: 40px;
+    .intro h1, 
+    .contain_map h1,
+    .context_about .about_info h2, 
+    .context_about .about_extra h2, 
+    .service_about article h2,
+    .federados_team h2,
+    section.context_tour h2 {
+        font-size: 30px;
+    }
+    .next_events .next_match .teams_vs {
+        gap: 30px;
+    }
+    .lasted_result .next_match .teams_vs {
+        gap: 30px;
+    }
+    .next_events .next_match .teams_vs > div img {
+        width: 55px;
+        height: 55px;
+    }
+    .lasted_result .next_match .teams_vs > div img {
+        width: 55px;
+        height: 55px;
+    }
+    .contain_stories{
+        max-width: 320px;
+    }
+    .stories_slide article.card_stories{
+        width: 260px;
+    }
+    article.card_stories .img_stories {
+        height: 180px;
+    }
+    /* --------------------page_Gallery-------------------- */
+    .contain_gallery article span {
+        font-size: 20px;
     }
 }

@@ -1,25 +1,150 @@
 /* ---------HEADER SECTION------------- */
 /*-----------------------Context_tour---------------------*/
+.banner_club{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image:  linear-gradient(to right, #06c8c1a1, #00b7e57a),url('../img/pexels-voley.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.banner_club div{
+    width: 100%;
+    height: 100%;
+    font-family: 'RobotoCondensed';
+    backdrop-filter: brightness(.6);
+    padding: 0 0 2rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.banner_club p{
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 15px #00B9E5;
+    font-size: 85px;
+    margin: 0;
+}
+.banner_club h3{
+    font-family: 'RobotoCondensed';
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 0 15px #00B9E5;
+    margin: 0;
+}
 section.context_tour{
-    padding: 120px 0;
-    max-width: 1200px;
+    padding: 100px 30px;
+    max-width: 1320px;
     margin: 0 auto;
     /* background-color: #2e2e2e; */
     /* color: #fff; */
 }
-section.context_tour h1{
-    font-size: 70px;
-    font-family: 'RobotoCondensed';
-    text-align: center;
-    margin-bottom: 50px;
-    color: #1EBDD3;
-}
-section.context_tour h3{
-    font-size: 35px;
+section.context_tour h2{
+    font-size: 55px;
     font-weight: bold;
     font-family: 'RobotoCondensed';
     color: #1EBDD3;
     /* text-shadow: 0 0 5px #00B9E5; */
     margin-bottom: 20px;
+}
+.team_fed{
+    margin: 25px 0;
+}
+.team_fed h4,
+.container_next_match h4{
+    font-family: 'RobotoCondensed';
+    color: #353A3E;
+}
+.team_fed table{
+    min-width: 850px;
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: center;
+    background-image:  url('../img/figure_voley.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.team_fed table thead{
+    background-color: #353A3E;
+    font-family: 'RobotoCondensed';
+    color: #fff;
+}
+.team_fed table td{
+    padding: 15px 0 ;
+}
+.team_fed table thead td:nth-child(2),
+.team_fed table tbody tr td:nth-child(2){
+    text-align: left;
+}
+.team_fed table tbody tr{
+    border-bottom: 2px #fff solid;
+    background-color: rgba(204, 204, 204, 0.5);
+}
+.container_next_match{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+.container_next_match .cont_title{
+    width: 50%;
+}
+.container_next_match h4{
+    color: #1EBDD3;
+}
+.container_next_match article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    /* width: 50%; */
+    border-bottom:1px solid  rgba(53, 58, 62, 0.5);
+    padding: 10px 0;
+    position: relative;
+}
+.container_next_match article::before{
+    content: '';
+    position: absolute;
+    height: 65%;
+    width: 1px;
+    left: 25%;
+    background-color: rgba(53, 58, 62, 0.5);
+}
+.container_next_match article::after{
+    content: '';
+    position: absolute;
+    height: 65%;
+    width: 1px;
+    right: 18%;
+    background-color: rgba(53, 58, 62, 0.5);
+}
+.container_next_match article .teams_vs{
+    width: 50%;
+}
+.container_next_match article .teams_vs h5{
+    margin: 0;
+}
+.container_next_match article .teams_vs > div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.container_next_match article .teams_vs > div .cont_img{
+    width: 45px;
+    height: 45px;
+}
+.container_next_match article .teams_vs > div .cont_img img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+.container_next_match article .score_set > div span:nth-child(1){
+    margin-right: 20px;
 }
 /*------------FOOTER SECTION---------------------*/

@@ -232,6 +232,8 @@
 /*--------------- Section intro------------------ */
 section.intro{
     padding-top: 100px;
+    font-size: 18px;
+    color: #7a7a7a;;
 }
 .intro h1{
     font-family: 'RobotoCondensed';
@@ -391,13 +393,19 @@ aside.table_result .next_match{
     padding: 100px 0;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../img/bg_stories.jpg');
     background-size: cover;
+    display: flex;
+    justify-content: center;
 }
 .contain_stories{
     max-width: 1230px;
+    width: 100%;
     padding: 0 20px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     position: relative;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
 }
 .contain_stories > h1{
     font-family: 'RobotoCondensed';
@@ -407,10 +415,15 @@ aside.table_result .next_match{
     margin-bottom: 50px;
 }
 .contain_stories .stories_slide{
-    width: 200%;
-    padding: 20px 0px;
+    width: 104%;
+    overflow: hidden;
+    /* display: flex;
+    gap: 30px; */
+}
+.contain_stories .stories_slide .slide_card{
     display: flex;
     gap: 30px;
+    padding: 20px 0 20px 10px;
 }
 .stories_slide article.card_stories{
     width: 280px;
