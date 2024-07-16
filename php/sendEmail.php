@@ -1,5 +1,6 @@
 <!-- Abro PHP -->
 <?php
+print_r($_POST);
 //Definir las variables y establecer valores vacíos
 $nameErr = $apellidoErr = $emailErr = $subjectErr = $messageErr = "";//todos los Err valen nada
 $name = $apellido = $email = $subject = $message = "";//estas variables no valen nada

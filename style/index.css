@@ -118,6 +118,7 @@
 }
 .slide_item:nth-child(1) .slide_info button{
     padding: 15px 40px;
+    margin-top: 20px;
     background-color: rgba(169, 169, 169, 0.5);
     border: none;
     border-radius: 5px;
@@ -365,29 +366,6 @@ aside.table_result .next_match{
     box-shadow: 0 0px 10px rgba(0, 0, 0, .2);
     position: relative;
 }
-/* .lasted_result button::after{
-    content: '';
-    background-image: url('../img/icon/arrow-right.svg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 25px;
-    position: absolute;
-    color: #00B9E5;
-    left: 70%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.5s linear;
-} */
-/* .lasted_result button:hover::after{
-    left: 80%;
-    scale: 1.1;
-} */
-/* .next_events button{
-    background-color: #00B9E5;
-    color: #fff;
-} */
 /*------------------------section_stories----------- */
 .section_stories{
     padding: 100px 0;
@@ -493,7 +471,6 @@ article.card_stories .info_stories{
 }
 .btn_stories button:hover{
     background-color: #00B9E5;
-    
 }
 
 /* -----------------------footer-------------------- */

@@ -39,15 +39,14 @@ section.context_tour{
     padding: 100px 30px;
     max-width: 1320px;
     margin: 0 auto;
-    /* background-color: #2e2e2e; */
-    /* color: #fff; */
+    font-size: 18px;
+    color: #7a7a7a;
 }
 section.context_tour h2{
     font-size: 55px;
     font-weight: bold;
     font-family: 'RobotoCondensed';
     color: #1EBDD3;
-    /* text-shadow: 0 0 5px #00B9E5; */
     margin-bottom: 20px;
 }
 .team_fed{

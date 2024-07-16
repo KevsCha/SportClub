@@ -21,9 +21,9 @@
                 <ul>
 					<a href="index.html"><li>HOME</li></a>
 					<a href="about.html"><li>ABOUT</li></a>
-					<a href="tournament.html"><li class="nav_active">TOURNAMENT</li></a>
+					<a href="tournament.html"><li  class="nav_active">TOURNAMENT</li></a>
 					<a href="gallery.html"><li>GALLERY</li></a>
-					<a href="contact.html"><li>CONTACT</li></a>
+					<a href="contact.php"><li>CONTACT</li></a>
 					<div class="layout"></div>
 				</ul>
                 <div id="btn_menu" class="hamburguer_menu ">
@@ -43,7 +43,7 @@
             <section class="context_tour">
                 <h2>Trayectoria de los federados</h2>
                 <p>Nuestros equipos federados representan con orgullo al Club Warriors en diversas competiciones oficiales a nivel regional y nacional. Con un fuerte compromiso y dedicación, tanto los jugadores como los entrenadores trabajan incansablemente para alcanzar la excelencia, mejorar sus habilidades y dejar el nombre del club en lo más alto. Estos equipos son el resultado de años de esfuerzo y preparación, y su participación en torneos es una muestra del alto nivel de competitividad y profesionalismo que caracteriza al Club Warriors.</p>
-                <div class="container_tables">
+                <div id="table_fed" class="container_tables">
                     <article class="team_fed">
                         <h4>FedB-Masculino 2da Division</h4>
                         <table>
@@ -243,13 +243,14 @@
                         </table>
                     </article>
                 </div>
+                <h2>Next Matchs</h2>
                 <div class="container_next_match">
                     <div class="cont_title">
                         <h4>FedB-Masculino 2da Division</h4>
                         <article>
                             <div class="data_match">
                                 <p>Sab 17:00 | 13/07</p>
-                                <a href="">Mas info</a>
+                                <!-- <a href="">Mas info</a> -->
                             </div>
                             <div class="teams_vs">
                                 <div class="team_a">
@@ -290,7 +291,7 @@
                         <article>
                             <div class="data_match">
                                 <p>Sab 17:00 | 13/07</p>
-                                <a href="">Mas info</a>
+                                <!-- <a href="">Mas info</a> -->
                             </div>
                             <div class="teams_vs">
                                 <div class="team_a">
@@ -327,13 +328,13 @@
                         </article>
                     </div>
                 </div>
-                <h2>Liga Interna del Club</h2>
+                <!-- <h2>Liga Interna del Club</h2>
                 <p>La liga interna del Club Warriors, conocida como "Warriors League", es una emocionante plataforma de competencia interna que permite a nuestros miembros medirse entre sí en un ambiente amigable y competitivo. Esta liga está diseñada para fomentar el espíritu de equipo y proporcionar a los jugadores de todos los niveles la oportunidad de mejorar sus habilidades y disfrutar del voleibol. Además, la Warriors League es una excelente manera de descubrir y desarrollar nuevos talentos dentro del club, brindando a todos los participantes la oportunidad de destacarse y avanzar en su carrera deportiva.
                 </p>
 
                 <h2>Equipos Participantes en la Liga Interna</h2>
                 <p>La siguiente tabla muestra los equipos que participan en nuestra liga interna, sus categorías y sus entrenadores respectivos. Estos equipos compiten regularmente en la Warriors League, ofreciendo un espectáculo deportivo emocionante y de alta calidad.</p>
-                
+                 -->
             </section>
             <section class="federados_team">
 
@@ -350,47 +351,47 @@
                             <a href=""><li><span></span>+44 3656 4567</li></a>
                         </ul>
                         <div class="social_red">
-                            <a href="#"><img src="./img/icon/brand-facebook.svg" alt="facebook"></a>
-                            <a href="#"><img src="./img/icon/brand-x.svg" alt="twitter"></a>
-                            <a href="#"><img src="./img/icon/brand-instagram.svg" alt="instagram"></a>
-                            <a href="#"><img src="./img/icon/brand-pinterest.svg" alt="pinterest"></a>
+                            <a href="https://www.facebook.com/"><img src="./img/icon/brand-facebook.svg" alt="facebook"></a>
+                            <a href="https://x.com/"><img src="./img/icon/brand-x.svg" alt="twitter"></a>
+                            <a href="https://www.instagram.com/"><img src="./img/icon/brand-instagram.svg" alt="instagram"></a>
+                            <a href="https://www.pinterest.es/"><img src="./img/icon/brand-pinterest.svg" alt="pinterest"></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 mb-5">
                         <h4 class="mb-5 fw-bold">RECENT POST</h4>
                         <div class="links_section">
-                            <span><a href="">Gallery post</a></span>
-                            <span><a href="">Transmission channel</a></span>
-                            <span><a href="">Result week</a></span>
-                            <span><a href="">Spring league</a></span>
+                            <span><a href="./gallery.html">Gallery post</a></span>
+                            <span><a href="./tournament.html">Transmission channel</a></span>
+                            <span><a href="./tournament.html#table_fed">Result week</a></span>
+                            <span><a href="./about.html#staff">League coaches</a></span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 mb-5">
                         <h4 class="mb-5 fw-bold">RECENT WORK</h4>
                         <div class="galery_section">
                             <div class="img_link">
-                                <img src="./img/pxfuel (1).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (1).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel (2).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (2).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel (3).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (3).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel (4).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (4).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel.jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel.jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel (7).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (7).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                         </div>
                     </div>

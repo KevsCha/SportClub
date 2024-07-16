@@ -13,17 +13,17 @@
 </head>
 <body>
     <div class="contain_style">
-        <header id="home">
-			<nav class="header_nav">
-				<div class="logo">
-					<a href="index.html"><img src="./img/logo.png" alt="logo"></a>
-				</div>
-				<ul>
+    <header id="home">
+            <nav class="header_nav">
+                <div class="logo">
+                    <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <ul>
 					<a href="index.html"><li>HOME</li></a>
 					<a href="about.html"><li>ABOUT</li></a>
 					<a href="tournament.html"><li>TOURNAMENT</li></a>
 					<a href="gallery.html"><li>GALLERY</li></a>
-					<a href="contact.html"><li class="nav_active">CONTACT</li></a>
+					<a href="contact.php"><li  class="nav_active">CONTACT</li></a>
 					<div class="layout"></div>
 				</ul>
                 <div id="btn_menu" class="hamburguer_menu ">
@@ -31,8 +31,8 @@
                     <div class="layout_menu"></div>
                     <div class="layout_menu"></div>
                 </div>
-			</nav>
-		</header>
+            </nav>
+        </header>
         <main>
             <div class="banner_club">
                 <div>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contain_form">
+            <div id="contact_us" class="contain_form">
                 <section class="ftco-section">
                     <div class="container_form">
                         <div class="row justify-content-center">
@@ -157,47 +157,47 @@
                             <a href=""><li><span></span>+44 3656 4567</li></a>
                         </ul>
                         <div class="social_red">
-                            <a href="#"><img src="./img/icon/brand-facebook.svg" alt="facebook"></a>
-                            <a href="#"><img src="./img/icon/brand-x.svg" alt="twitter"></a>
-                            <a href="#"><img src="./img/icon/brand-instagram.svg" alt="instagram"></a>
-                            <a href="#"><img src="./img/icon/brand-pinterest.svg" alt="pinterest"></a>
+                            <a href="https://www.facebook.com/"><img src="./img/icon/brand-facebook.svg" alt="facebook"></a>
+                            <a href="https://x.com/"><img src="./img/icon/brand-x.svg" alt="twitter"></a>
+                            <a href="https://www.instagram.com/"><img src="./img/icon/brand-instagram.svg" alt="instagram"></a>
+                            <a href="https://www.pinterest.es/"><img src="./img/icon/brand-pinterest.svg" alt="pinterest"></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 mb-5">
                         <h4 class="mb-5 fw-bold">RECENT POST</h4>
                         <div class="links_section">
-                            <span><a href="">Gallery post</a></span>
-                            <span><a href="">Transmission channel</a></span>
-                            <span><a href="">Result week</a></span>
-                            <span><a href="">Spring league</a></span>
+                            <span><a href="./gallery.html">Gallery post</a></span>
+                            <span><a href="./tournament.html">Transmission channel</a></span>
+                            <span><a href="./tournament.html#table_fed">Result week</a></span>
+                            <span><a href="./about.html#staff">League coaches</a></span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 mb-5">
                         <h4 class="mb-5 fw-bold">RECENT WORK</h4>
                         <div class="galery_section">
                             <div class="img_link">
-                                <img src="./img/pxfuel (1).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (1).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel (2).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (2).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel (3).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (3).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel (4).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (4).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel.jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel.jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel (7).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (7).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                         </div>
                     </div>

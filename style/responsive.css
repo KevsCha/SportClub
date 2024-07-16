@@ -190,10 +190,8 @@
     .service_about .work_about > article{
         min-height: 750px;
     }
-
-    /* *bg */
-    .service_about .bg_radial > div {
-
+    .federados_team .container > .row img{
+        height: 400px;
     }
     .service_about .bg_radial > div > div{
         min-height: 750px;
@@ -408,6 +406,10 @@
         min-height: 575px;
         width: 100%;
     }
+    .federados_team .container > .row img{
+        height: 450px;
+        object-position: 50% 15%;
+    }
     /* --------------------page_Gallery-------------------- */
     .contain_gallery article {
         width: 75%;
@@ -506,6 +508,9 @@
         padding-bottom: 60px;
         text-align: center;
         backdrop-filter: brightness(.6);
+    }
+    .context_about .about_table {
+        width: 90%;
     }
     .context_about {
         padding: 50px 12px;

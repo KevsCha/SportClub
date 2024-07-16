@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, 
+	initial-scale=1.0">
 	<meta name="description" content="">
     <meta name="author" content="">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -14,25 +15,25 @@
 <body>
     <div class="contain_style">
 		<header id="home">
-			<nav class="header_nav">
-				<div class="logo">
-					<a href="index.html"><img src="./img/logo.png" alt="logo"></a>
-				</div>
-				<ul>
+            <nav class="header_nav">
+                <div class="logo">
+                    <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <ul>
 					<a href="index.html"><li class="nav_active">HOME</li></a>
 					<a href="about.html"><li>ABOUT</li></a>
 					<a href="tournament.html"><li>TOURNAMENT</li></a>
 					<a href="gallery.html"><li>GALLERY</li></a>
-					<a href="contact.html"><li>CONTACT</li></a>
+					<a href="contact.php"><li>CONTACT</li></a>
 					<div class="layout"></div>
 				</ul>
-			</nav>
-			<div id="btn_menu" class="hamburguer_menu menu_active">
-				<div class="layout_menu"></div>
-				<div class="layout_menu"></div>
-				<div class="layout_menu"></div>
-			</div>
-		</header>
+                <div id="btn_menu" class="hamburguer_menu ">
+                    <div class="layout_menu"></div>
+                    <div class="layout_menu"></div>
+                    <div class="layout_menu"></div>
+                </div>
+            </nav>
+        </header>
 		<main>
 			<div class="slider_contain">
 				<div class="slider">
@@ -43,13 +44,7 @@
 							<h1>WARRIORS</h1>
 							<h2>High performance volleyball club</h2>
 							<h2>Do you want to join this family?</h2>
-							<button>CONTACT US</button>
-							<!-- <div class="slide_collaborators">
-								<img src="" alt="logo_1">
-								<img src="" alt="logo_2">
-								<img src="" alt="logo_3">
-								<img src="" alt="logo_4">
-							</div> -->
+							<button onclick="redirect('contact.html#contact_us')">CONTACT US</a></button>
 						</div>
 					</div>
 					<div class="slide_item">
@@ -397,47 +392,47 @@
                             <a href=""><li><span></span>+44 3656 4567</li></a>
                         </ul>
                         <div class="social_red">
-                            <a href="#"><img src="./img/icon/brand-facebook.svg" alt="facebook"></a>
-                            <a href="#"><img src="./img/icon/brand-x.svg" alt="twitter"></a>
-                            <a href="#"><img src="./img/icon/brand-instagram.svg" alt="instagram"></a>
-                            <a href="#"><img src="./img/icon/brand-pinterest.svg" alt="pinterest"></a>
+                            <a href="https://www.facebook.com/"><img src="./img/icon/brand-facebook.svg" alt="facebook"></a>
+                            <a href="https://x.com/"><img src="./img/icon/brand-x.svg" alt="twitter"></a>
+                            <a href="https://www.instagram.com/"><img src="./img/icon/brand-instagram.svg" alt="instagram"></a>
+                            <a href="https://www.pinterest.es/"><img src="./img/icon/brand-pinterest.svg" alt="pinterest"></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 mb-5">
                         <h4 class="mb-5 fw-bold">RECENT POST</h4>
                         <div class="links_section">
-                            <span><a href="">Gallery post</a></span>
-                            <span><a href="">Transmission channel</a></span>
-                            <span><a href="">Result week</a></span>
-                            <span><a href="">Spring league</a></span>
+                            <span><a href="./gallery.html">Gallery post</a></span>
+                            <span><a href="./tournament.html">Transmission channel</a></span>
+                            <span><a href="./tournament.html#table_fed">Result week</a></span>
+                            <span><a href="./about.html#staff">League coaches</a></span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 mb-5">
                         <h4 class="mb-5 fw-bold">RECENT WORK</h4>
                         <div class="galery_section">
                             <div class="img_link">
-                                <img src="./img/pxfuel (1).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (1).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel (2).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (2).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel (3).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (3).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel (4).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (4).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel.jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel.jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                             <div class="img_link">
-                                <img src="./img/pxfuel (7).jpg" alt="sample_img">
-                                <img src="./img/icon/link.svg" alt="chain">
+                                <img onclick="redirect('gallery.html')" src="./img/pxfuel (7).jpg" alt="sample_img">
+                                <img onclick="redirect('gallery.html')" src="./img/icon/link.svg" alt="chain">
                             </div>
                         </div>
                     </div>

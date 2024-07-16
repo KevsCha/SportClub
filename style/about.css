@@ -205,14 +205,15 @@
     overflow: hidden;
 }
 .federados_team .container > .row div.card > .card-body{
-
     background-color: white;
+    color: #7a7a7a;
     position: relative;
     z-index: 2;
 }
 .federados_team .container > .row img{
-    height: 400px;
+    height: 450px;
     object-fit: cover;
+    object-position: 50% 30%;
     transition: all 0.3s linear;
 }
 .federados_team .container > .row img:hover{
