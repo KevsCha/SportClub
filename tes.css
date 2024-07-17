@@ -33,6 +33,10 @@
     display: flex;
     gap: 30px;
     padding: 20px 0 20px 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.slide_card .card{
+    transition: transform 0.3s ease-in-out;
 }
 .stories_slide article.card_stories{
     width: 280px;

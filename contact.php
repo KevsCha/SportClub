@@ -85,7 +85,7 @@
                                                     <span class="fa fa-paper-plane"></span>
                                                 </div>
                                                 <div class="text">
-                                                    <p><span>Intagram:</span> <a href="https://www.instagram.com/">info@yoursite.com</a></p>
+                                                    <p><span>Intagram:</span> <a href="https://www.instagram.com/">@yoursite</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -135,8 +135,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-5 d-flex align-items-stretch">
-                                            <div class="info-wrap w-100 p-5 img" style="background-image: url(./img/pxfuel\ \(7\).jpg); filter: brightness(.7);">
-                                  </div>
+                                            <div class="info-wrap w-100 p-5 img" style="background-image: url(./img/pxfuel\ \(7\).jpg); filter: brightness(.7);"></div>
                                         </div>
                                     </div>
                                 </div>

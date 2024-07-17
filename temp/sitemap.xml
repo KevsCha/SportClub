@@ -2,20 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
         xmlns:image="http://www.w3.org/2001/XMLSchema-instance"> <!-- aqui se escribe el dominio y abajo el logo-->
     <url>
-        <loc>https://www.example.com/</loc>
+        <loc>http://127.0.0.1:5503/index.html</loc>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/logo.png</image:loc>
+            <image:caption>Logo de la empresa, WARRIORS</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/pxfuel.jpg</image:loc>
+            <image:caption>Imagen 1 de fondo, carrusel</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/pexels-pavel-danilyuk-6203572.jpg</image:loc>
+            <image:caption>Banner 1 de resultados del partido</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/figure_voley.png</image:loc>
+            <image:caption>Imagen 1 dentro del banner </image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/figure_voley_2.png</image:loc>
+            <image:caption>Imagen 2 dentro del banner</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/recep.jpg</image:loc>
+            <image:caption>Mejora tu habilidad</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/campeonato.jpeg</image:loc>
+            <image:caption>Desafia tu competencia</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/kit_voley.jpg</image:loc>
+            <image:caption>Preparate como un profesional</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/bg_stories.jpg</image:loc>
+            <image:caption>Banner 2 Top Stories</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/pxfuel%20(1).jpg</image:loc>
+            <image:caption>Historias nuevas</image:caption>
+        </image:image>
     </url>
     <url>
-        <loc>https://www.example.com/about.html</loc>
+        <loc>http://127.0.0.1:5503/about.html</loc>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/banner_about.jpg</image:loc>
+            <image:caption>Banner Top about</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/video/point_pipe.mp4</image:loc>
+            <image:caption>Video jugando voley</image:caption>
+        </image:image>
     </url>
     <url>
-        <loc>https://www.example.com/contact.html</loc>
+        <loc>http://127.0.0.1:5503/tournament.html</loc>
+        <lastmode>2024-07-30:09:54:00+05:00</lastmode>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/banner_about.jpg</image:loc>
+            <image:caption>Banner Top tournament</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:5503/gallery.html</loc>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/video/voley_mix.mp4</image:loc>
+            <image:caption>Video de fondo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/AbbyBottomley.jpg</image:loc>
+            <image:caption>Seccion imagen 1</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/pxfuel%20(3).jpg</image:loc>
+            <image:caption>Seccion imagen 2</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/pexels-voley_2.jpg</image:loc>
+            <image:caption>Seccion imagen 3</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/pexels-voley_3.jpg</image:loc>
+            <image:caption>Seccion imagen 4</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://127.0.0.1:5503/img/campeonato.jpeg</image:loc>
+            <image:caption>Seccion imagen 5</image:caption>
+        </image:image>
         <lastmode>2024-07-30:09:54:00+05:00</lastmode>
     </url>
     <url>
-        <loc>https://www.example.com/gallery.html</loc>
-        <image:image>
-            <image:loc>http://www.idealizarte.com/paisaje.jpg</image:loc>
-        </image:image>
+        <loc>http://127.0.0.1:5503/contact.php</loc>
         <lastmode>2024-07-30:09:54:00+05:00</lastmode>
     </url>
 </urlset>
