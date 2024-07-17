@@ -315,7 +315,7 @@ header{
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: #ffffff99;
+    /* background-color: #ffffff99; */
 }
 .container_elements .box_gallery .cont_img img{
     position: absolute;

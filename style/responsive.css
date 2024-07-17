@@ -103,6 +103,20 @@
     .contain_gallery article span {
         font-size: 25px;
     }
+    /* --------------------pageTournamet------------------- */
+    .container_next_match .cont_title{
+        width: 45%;
+    }
+    .container_next_match article::before{
+        left: 30%;
+    }
+    .container_next_match article .data_match {
+        width: 30%;
+    }
+    .container_next_match article .teams_vs {
+        width: 30%;
+        padding-left: 0;
+    }
 }
 @media only screen and (width < 992px){
     .header_nav .logo{
@@ -203,8 +217,17 @@
         height: 180px;
     }
     /* --------------------page_tournament-------------------- */
-    .container_tables {
+    .team_fed {
         overflow-x: scroll;
+    }
+    .container_next_match article::after{
+        right: 30%;
+    }
+    .container_next_match {
+        flex-direction: column;
+    }
+    .container_next_match .cont_title {
+        width: 100%;
     }
 }
 @media only screen and (width < 768px){
@@ -425,6 +448,33 @@
         top: -33%;
         left: 33%;
     }
+    .container_elements .box_gallery {
+        flex-direction: column;
+        align-items: center;
+        height: 65%;
+        width: 97.5%;
+    }
+    .container_elements .box_gallery .items_navbar {
+        width: 100%;
+        padding: 10px;
+    }
+    .container_elements .box_gallery .cont_img {
+        width: 95%;
+        height: 97.5%;
+        position: relative;
+        /* background-color: #ffffff99; */
+    }
+    /* --------------------pageTournament------------------- */
+    .container_next_match article {
+        gap: 10px;
+    }
+    .team_fed table {
+        font-size: 1em;
+    }
+    .team_fed table td {
+        padding: 10px 0;
+    }
+    
 }
 @media only screen and (width < 576px){
     .header_nav ul{
@@ -540,7 +590,26 @@
     .contain_gallery h1 {
         width: 90%;
     }
-
+    /* --------------------pageTournament------------------ */
+    .container_next_match article .teams_vs > div .cont_img {
+        width: 40px;
+        height: 40px;
+    }
+    .container_next_match article::before {
+        left: 45%;
+    }
+    .container_next_match article .data_match {
+        width: 50%;
+    }
+    .container_next_match article .teams_vs {
+        width: 50%;
+    }
+    .container_next_match article .score_set {
+        display: none;
+    }
+    .container_next_match article::after {
+        display: none;
+    }
 }
 @media only screen and (width < 425px){
     .slide_info h1{

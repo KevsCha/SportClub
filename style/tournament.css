@@ -84,25 +84,28 @@ section.context_tour h2{
     border-bottom: 2px #fff solid;
     background-color: rgba(204, 204, 204, 0.5);
 }
+.nextMatch{
+    padding: 50px 0;
+}
 .container_next_match{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 40px;
     margin-bottom: 60px;
 }
 .container_next_match .cont_title{
-    width: 50%;
+    width: 48%;
 }
 .container_next_match h4{
     color: #1EBDD3;
 }
 .container_next_match article{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 16px;
-    /* width: 50%; */
+    gap: 20px;
     border-bottom:1px solid  rgba(53, 58, 62, 0.5);
     padding: 10px 0;
     position: relative;
@@ -120,21 +123,35 @@ section.context_tour h2{
     position: absolute;
     height: 65%;
     width: 1px;
-    right: 18%;
+    right: 25%;
     background-color: rgba(53, 58, 62, 0.5);
 }
+.container_next_match article .data_match{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 .container_next_match article .teams_vs{
-    width: 50%;
+    width: 40%;
+    padding-left: 5%;
+}
+.container_next_match article .score_set{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 .container_next_match article .teams_vs h5{
     margin: 0;
 }
 .container_next_match article .teams_vs > div{
-    display: flex;
+    /* display: flex; */
     gap: 10px;
     align-items: center;
 }
 .container_next_match article .teams_vs > div .cont_img{
+    display: inline-block;
     width: 45px;
     height: 45px;
 }
