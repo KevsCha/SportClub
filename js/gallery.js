@@ -137,4 +137,4 @@ function select_img(){
     console.log(sectionSelect);
     console.log(sectionImg);
 }
-select_img();
+select_img();   
