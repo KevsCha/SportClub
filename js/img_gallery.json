@@ -1,52 +1,47 @@
 {
     "training":[
-        {
-            "id": 1,
-            "url": "../img/Choco-Palacios-Voleibl.webp"
-        },
-        {
-            "id": 2,
-            "url": "../img/volley_setting.webp"
-        }
+        {"id": 1,"url": "../img/Choco-Palacios-Voleibl.webp"},
+        {"id": 2,"url": "../img/volley_setting.webp"},
+		{"id": 3,"url":"../img/pexels-voley_3.jpg"},
+		{"id": 4,"url":"../img/recep.jpeg"},
+		{"id": 5,"url":"../img/pexels-saque.jpg"}
     ],
     "competition":[
-        {
-            "id": 3,
-            "url": "../img/campeonato.jpeg"
-        },
-        {
-            "id": 4,
-            "url": "../img/dececcluciano1.jpg"
-        }
+        {"id":6,"url": "../img/campeonato.jpeg"},
+        {"id":7,"url": "../img/dececcluciano1.jpg"},
+		{"id":8,"url": "../img/pexels-pavel-danilyuk-6203572.jpg"},
+		{"id":9,"url": "../img/pexels-voley_2.jpg"},
+		{"id":10,"url": "../img/article_img_2.jpg"},
+		{"id":11,"url": "../img/article_img_3.jpg"},
+		{"id":12,"url": "../img/article_img_4.jpg"},
+		{"id":13,"url": "../img/Choco-Palacios-Voleibl.webp"},
+		{"id":14,"url": "../img/pxfuel (3).jpg"}
     ],
     "mini_league":[
-        {
-            "id": 5,
-            "url": "../img/pexels-voley.jpg"
-        },
-        {
-            "id": 6,
-            "url": "../img/service_coach.jpeg"
-        }
+        {"id": 15,"url": "../img/pexels-voley.jpg"},
+        {"id": 16,"url": "../img/service_coach.jpeg"},
+		{"id": 17,"url": "../img/pexels-voley_4.jpg"},
+		{"id": 18,"url": "../img/coach_2.jpg"},
+		{"id": 19,"url": "../img/coach_4.jpg"},
+		{"id": 20,"url": "../img/coach_5.jpg"},
+		{"id": 21,"url": "../img/pexels-mixt.jpg"}
     ],
     "mixt_league":[
-        {
-            "id": 7,
-            "url": "../img/recep.jpeg"
-        },
-        {
-            "id": 8,
-            "url": "../img/pxfuel.jpg"
-        }
+        {"id": 22,"url": "../img/recep.jpeg"},
+        {"id": 23,"url": "../img/pxfuel.jpg"},
+		{"id":24,"url": "../img/pexels-voley_3.jpg"},
+		{"id":25,"url": "../img/pexels-mixt_2.jpg"},
+		{"id":26,"url": "../img/pexels-mixt_3.jpg"},
+		{"id":27,"url": "../img/pexels-mixt_4.jpg"}
     ],
     "events_club":[
-        {
-            "id": 9,
-            "url": "../img/figure_voley.png"
-        },
-        {
-            "id": 10,
-            "url": "../img/sekita4.jpg"
-        }
+        {"id": 28,"url": "../img/figure_voley.png"},
+        {"id": 29,"url": "../img/sekita4.jpg"},
+		{"id":30, "url":"../img/banner_about.jpg"},
+		{"id":31, "url":"../img/campeonato.jpeg"},
+		{"id":32, "url":"../img/team_1.jpg"},
+		{"id":33, "url":"../img/team_4.jpg"},
+		{"id":34, "url":"../img/pxfuel (4).jpg"},
+		{"id":35, "url":"../img/pxfuel.jpg"}
     ]
 }
