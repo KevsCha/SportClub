@@ -321,13 +321,12 @@ header{
 }
 .container_elements .box_gallery .cont_img img{
     position: absolute;
-    /* opacity: 0; */
+    opacity: 0;
     width: 100%;
     height: inherit;
     object-fit: cover;
     object-position: center;
     z-index: -1;
-    /* display: none; */
 }
 .container_elements .box_gallery .cont_img img.true{
     opacity: 1;
