@@ -283,9 +283,6 @@
     .header_nav ul a:nth-child(5) li{
         background-image: url('../img/icon/phone.svg');
     }
-    .header_nav ul a:nth-child(1){
-        /* transform: translateY(-50px); */
-    }
     .header_nav ul a:nth-child(2){
         transform: translateY(-55px);
     }
