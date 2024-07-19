@@ -451,18 +451,22 @@
     .container_elements .box_gallery {
         flex-direction: column;
         align-items: center;
+        min-height: 850px;
         height: 65%;
         width: 97.5%;
     }
     .container_elements .box_gallery .items_navbar {
         width: 100%;
-        padding: 10px;
+        padding: 15px 10px;
     }
     .container_elements .box_gallery .cont_img {
         width: 95%;
         height: 97.5%;
         position: relative;
-        /* background-color: #ffffff99; */
+    }
+    .container_elements .box_gallery .cont_img img {
+        object-fit: contain;
+        background: #000;
     }
     /* --------------------pageTournament------------------- */
     .container_next_match article {
@@ -565,12 +569,6 @@
     .context_about {
         padding: 50px 12px;
     }
-    /* .banner_club p {
-        text-align: center;
-    }
-    .banner_club h3 {
-        text-align: center;
-    } */
     .service_about .teams_about > article, 
     .service_about .work_about > article {
         padding: 20px 12px;
@@ -587,9 +585,16 @@
         font-size: 40px;
     }
     /* --------------------page_Gallery-------------------- */
+    .contain_gallery {
+        padding: 50px 0;
+    }
     .contain_gallery h1 {
         width: 90%;
     }
+    .container_elements .box_gallery {
+        min-height: 750px;
+    }
+
     /* --------------------pageTournament------------------ */
     .container_next_match article .teams_vs > div .cont_img {
         width: 40px;
